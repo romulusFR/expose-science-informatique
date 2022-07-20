@@ -95,55 +95,21 @@
   <p class="date">29 juillet 2022</p>
 </section>
 
-<section class="slide level2">
-
-<ul>
-<li><a href="#/introduction">Introduction</a>
-<ul>
-<li><a href="#/présentation-personnelle">Présentation personnelle</a>
-<ul>
-<li><a href="#/formation">Formation</a></li>
-<li><a href="#/emplois">Emplois</a></li>
-<li><a href="#/avant-propos">Avant-propos</a></li>
-</ul></li>
-<li><a href="#/les-informaticiens-détestent-les-imprimantes">Les informaticiens détestent les imprimantes</a>
-<ul>
-<li><a href="#/pourquoi-les-informaticiens-détestent-ils-les-imprimantes-">Pourquoi les informaticiens détestent-ils les imprimantes ?</a></li>
-</ul></li>
-<li><a href="#/objectifs-de-la-conférence">Objectifs de la conférence</a></li>
-</ul></li>
-<li><a href="#/science-technique-ou-art-">Science, technique ou art ?</a>
-<ul>
-<li><a href="#/métaphore-du-couteau">Métaphore du couteau</a>
-<ul>
-<li><a href="#/utiliser-correctement-un-couteau">Utiliser (correctement) un couteau</a></li>
-<li><a href="#/fabriquer-un-couteau">Fabriquer un couteau</a></li>
-</ul></li>
-<li><a href="#/une-définition-de-la-science-informatique">Une définition de la science informatique</a>
-<ul>
-<li><a href="#/informatics">Informatics</a></li>
-</ul></li>
-<li><a href="#/une-définition-en-français">Une définition en français</a></li>
-</ul></li>
-<li><a href="#/le-problème-min-max">Le problème <code>min-max</code></a>
-<ul>
-<li><a href="#/solution-étudiant-e-en-licence">Solution <em>étudiant-e en licence</em></a></li>
-<li><a href="#/solution-le-trieur">Solution <em>le trieur</em></a></li>
-<li><a href="#/solution-pythonista">Solution <em>Pythonista</em></a></li>
-<li><a href="#/quelle-est-la-meilleure-solution-">Quelle est la meilleure solution ?</a></li>
-</ul></li>
-<li><a href="#/la-formation-en-informatique-dans-le-supérieur">La formation en informatique dans le supérieur</a>
-<ul>
-<li><a href="#/la-licence-informatique-à-lunc">La licence Informatique à l’UNC</a></li>
-</ul></li>
-<li><a href="#/références">Références</a></li>
-</ul>
-</section>
-<section id="introduction" class="slide level2">
-<h2>Introduction</h2>
+<section id="introduction-au-séminaire" class="slide level2">
+<h2>Introduction au séminaire</h2>
 <aside class="notes">
 <p>Exposé proposé pour l’action <em>“Les lycéens à la fac”</em> du salon des études supérieures du 29 juillet 2022 de l’UNC (13h, Amphi A400).</p>
 </aside>
+</section>
+<section class="slide level2">
+
+<ul>
+<li><a href="#/introduction-au-séminaire">Introduction au séminaire</a></li>
+<li><a href="#/linformatique--science-technique-ou-art-">L’informatique : science, technique ou art ?</a></li>
+<li><a href="#/le-problème-min-max">Le problème <code>min-max</code></a></li>
+<li><a href="#/la-formation-en-informatique">La formation en informatique</a></li>
+<li><a href="#/références">Références</a></li>
+</ul>
 </section>
 <section class="slide level2">
 
@@ -166,19 +132,19 @@
 <section class="slide level2">
 
 <h4 id="avant-propos">Avant-propos</h4>
-<p><strong>Disclaimer</strong> : ni philosophe, ni sociologue, ni développeur : <em>enseignant-chercheur en informatique</em></p>
+<p><strong>Clause de non-responsabilité</strong> : ni philosophe, ni sociologue, ni développeur : <em>enseignant-chercheur <strong>en informatique</strong></em>.</p>
 <aside class="notes">
 <p>Beaucoup de métiers en informatique, j’en parle, mais on va centrer sur <em>la science</em></p>
 </aside>
 </section>
 <section class="slide level2">
 
-<h3 id="les-informaticiens-détestent-les-imprimantes">Les informaticiens détestent les imprimantes</h3>
+<h3 id="les-informaticiens-détestent-ils-les-imprimantes">Les informaticiens détestent-ils les imprimantes ?</h3>
 <figure>
 <img data-src="img/printer_programmer.png" alt="r/ProgrammerHumor – I can fix it, but not because I’m a programmer" /><figcaption aria-hidden="true"><a href="https://www.reddit.com/r/MemeTemplatesOfficial/comments/sk7nmt/will_smith_shouting_calm_shouting/">r/ProgrammerHumor – I can fix it, but not because I’m a programmer</a></figcaption>
 </figure>
 <aside class="notes">
-<p>blague : l’imprimante est un animal capricieux, qui comme le poulpe, une fois au pied du mur jette de l’encre sur ses aggresseurs</p>
+<p>blague : l’imprimante est un decalopode capricieux, qui comme le poulpe, une fois au pied du mur jette de l’encre sur ses aggresseurs et se vexe en bourrant le papier</p>
 </aside>
 </section>
 <section class="slide level2">
@@ -191,10 +157,10 @@
 <li>les logiciels sont propriétaires (voir <a href="https://amogh.medium.com/the-story-of-open-source-so-far-bfcb685d85a4">The Story of Open Source</a>)</li>
 </ul>
 <div class="fragment">
-<p><strong>Ce n’est pas le métier d’un développeur</strong>.</p>
+<p>Ce n’est pas le métier <strong>d’un développeur</strong> (ni celui d’un architecte logiciel, d’un intégrateur, d’un testeur etc).</p>
 </div>
 <div class="fragment">
-<p><strong>Ce n’est pas le métier d’un enseignant-chercheur</strong>.</p>
+<p>Ce n’est pas non plus le métier <strong>d’un enseignant-chercheur</strong>.</p>
 <aside class="notes">
 <p>Les grosses <strong>questions</strong> :</p>
 <ul>
@@ -207,6 +173,13 @@
 </section>
 <section class="slide level2">
 
+<p>Quels sont <strong>ces métiers</strong>, qu’est ce qui <em>les différencie</em> ?</p>
+<div class="fragment">
+<p>Une partie de la réponse est : <em>la science informatique</em>.</p>
+</div>
+</section>
+<section class="slide level2">
+
 <h3 id="objectifs-de-la-conférence">Objectifs de la conférence</h3>
 <ul>
 <li>rompre certaines <strong>idées reçues</strong> sur l’informatique et ses métiers</li>
@@ -214,11 +187,11 @@
 <li><strong>motiver les contenus</strong> des formations universitaires en informatique</li>
 </ul>
 <aside class="notes">
-<p>à l’UNC ou ailleurs</p>
+<p>Pour la formation, à l’UNC ou ailleurs, ce n’est pas très différent</p>
 </aside>
 </section>
-<section id="science-technique-ou-art" class="slide level2">
-<h2>Science, technique ou art ?</h2>
+<section id="linformatique-science-technique-ou-art" class="slide level2">
+<h2>L’informatique : science, technique ou art ?</h2>
 <figure>
 <img data-src="img/taoc.jpg" alt="Amazon – The Art Of Computer Programming" /><figcaption aria-hidden="true"><a href="https://images-na.ssl-images-amazon.com/images/I/410vJZbAZGS._SY393_BO1,204,203,200_.jpg">Amazon – The Art Of Computer Programming</a></figcaption>
 </figure>
@@ -226,18 +199,73 @@
 <section class="slide level2">
 
 <h3 id="métaphore-du-couteau">Métaphore du couteau</h3>
-<h4 id="utiliser-correctement-un-couteau">Utiliser (correctement) un couteau</h4>
+<p>Un parallèle entre <em>utiliser</em>, <em>réaliser</em> et <em>penser</em> un couteau en acier et un programme informatique.</p>
+</section>
+<section class="slide level2">
+
+<h4 id="utiliser-un-couteau---lart">Utiliser un couteau - l’art</h4>
 <figure>
 <img data-src="img/using-knife-safely.jpeg" alt="medium.com – How To Use Kitchen Knives" /><figcaption aria-hidden="true"><a href="https://medium.com/@alyarb03/how-to-use-kitchen-knives-safety-tips-5f073a98a18b">medium.com – How To Use Kitchen Knives</a></figcaption>
 </figure>
 </section>
 <section class="slide level2">
 
-<h4 id="fabriquer-un-couteau">Fabriquer un couteau</h4>
+<h4 id="fabriquer-un-couteau---la-technique">Fabriquer un couteau - la technique</h4>
 <figure>
-<img data-src="img/forging-blade.jpg" alt="Forging Knives in College" /><figcaption aria-hidden="true">Forging Knives in College</figcaption>
+<img data-src="img/forging-blade.jpg" alt="Industrial Heating – Forging Knives in College" /><figcaption aria-hidden="true"><a href="https://www.industrialheating.com/articles/95969-forging-knives-in-college">Industrial Heating – Forging Knives in College</a></figcaption>
 </figure>
-<p>Source <a href="https://www.industrialheating.com/articles/95969-forging-knives-in-college">Industrial Heating – Forging Knives in College</a></p>
+</section>
+<section class="slide level2">
+
+<h4 id="fabriquer-un-acier---la-science">Fabriquer un acier - la science</h4>
+<figure>
+<img data-src="img/Diag_binaire_aciers_et_structure.png" alt="Par Cdang — Travail personnel, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=5827078" /><figcaption aria-hidden="true">Par Cdang — Travail personnel, CC BY-SA 3.0, <a href="https://commons.wikimedia.org/w/index.php?curid=5827078" class="uri">https://commons.wikimedia.org/w/index.php?curid=5827078</a></figcaption>
+</figure>
+<aside class="notes">
+<p>L’acier a été découvert très tôt dans l’histoire car sa matière première est abondante (minerai), et qu’il est facile à travailler. L’acier « de base » est de fait peu onéreux.</p>
+<pre><code>fer : moins de 0,008 % de carbone en masse
+acier : entre 0,008 et 2,11 % de carbone ;
+fonte : teneur supérieure à 2,11 %.</code></pre>
+<p>Diagramme binaire fer-carbone et structure cristalline des aciers à l’état recuit</p>
+</aside>
+</section>
+<section class="slide level2">
+
+<h4 id="parallèle">Parallèle</h4>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th><em>Acier</em></th>
+<th><em>Informatique</em></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Art</strong></td>
+<td>cuisinier</td>
+<td>utilisateur</td>
+</tr>
+<tr class="even">
+<td><strong>Technique</strong></td>
+<td>artisan forgeron</td>
+<td>développeur</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>ingénieur méttalurgiste</td>
+<td>ingénieur informaticien</td>
+</tr>
+<tr class="even">
+<td><strong>Science</strong></td>
+<td>physico-chimiste, cristallographe</td>
+<td>scientifique en informatique</td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">
+<p>un parallèle assez naturel, car on parle de forge, de craftmanship dans le domaine du développement</p>
+</aside>
 </section>
 <section class="slide level2">
 
@@ -254,63 +282,91 @@
 <p><a href="https://www.lemonde.fr/blog/binaire/2014/02/05/la-place-de-linformatique-dans-la-classification-des-sciences/">La place de l’informatique dans la classification des sciences, Gilles DOWEK, 2014</a></p>
 <blockquote>
 <p>L’informatique parle d’objets de différente nature : <strong>informations</strong>, <strong>langages</strong>, <strong>machines</strong> et <strong>algorithmes</strong>.</p>
-<p>Chacun de ces quatre concepts est <em>antérieur à l’informatique</em>, mais ce qui ce que l’informatique apporte sans doute de nouveaux est <em>leur organisation en une science cohérente</em>.</p>
 </blockquote>
+<aside class="notes">
+<p>Chacun de ces quatre concepts est <em>antérieur à l’informatique</em>, mais ce qui ce que l’informatique apporte sans doute de nouveaux est <em>leur organisation en une science cohérente</em>.</p>
+</aside>
 </section>
 <section id="le-problème-min-max" class="slide level2">
 <h2>Le problème <code>min-max</code></h2>
-<p><strong>Problème</strong> trouver le plus grand élément et le plus petit élément d’une collection ordonnée (e.g., liste, tableau) non-vide.</p>
+<p><strong>Problème</strong> trouver le plus grand élément <strong>et</strong> le plus petit élément d’une collection linéaire (e.g., liste, tableau) <em>non-vide</em>.</p>
 </section>
 <section class="slide level2">
 
-<h3 id="solution-étudiant-e-en-licence">Solution <em>étudiant-e en licence</em></h3>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> min_max_etudiant(arr):</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    the_min <span class="op">=</span> arr[<span class="dv">0</span>]</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    the_max <span class="op">=</span> arr[<span class="dv">0</span>]</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> v <span class="kw">in</span> arr:</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> v <span class="op">&lt;</span> the_min:</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>            the_min <span class="op">=</span> v</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> v <span class="op">&gt;</span> the_max:</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>            the_max <span class="op">=</span> v</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> the_min, the_max</span></code></pre></div>
+<h3 id="différentes-solutions">Différentes solutions</h3>
+<h4 id="solution-de-létudiante">Solution <em>de l’étudiant·e</em></h4>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> min_max_etudiant(arr):</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    the_min <span class="op">=</span> arr[<span class="dv">0</span>]</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    the_max <span class="op">=</span> arr[<span class="dv">0</span>]</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> v <span class="kw">in</span> arr:</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> v <span class="op">&lt;</span> the_min:</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>            the_min <span class="op">=</span> v</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> v <span class="op">&gt;</span> the_max:</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>            the_max <span class="op">=</span> v</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> the_min, the_max</span></code></pre></div>
+<div class="fragment">
+<p><em>C’est une solution algorithmique classique : une séquence d’opérations élémentaires qui produit un résultat correct</em>.</p>
+</div>
 </section>
 <section class="slide level2">
 
-<h3 id="solution-le-trieur">Solution <em>le trieur</em></h3>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> min_max_sorter(arr):</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    s <span class="op">=</span> <span class="bu">sorted</span>(arr)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> s[<span class="dv">0</span>], s[<span class="op">-</span><span class="dv">1</span>]</span></code></pre></div>
+<h4 id="solution-de-développeur">Solution <em>de développeur</em></h4>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> min_max_sorter(arr):</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    s <span class="op">=</span> <span class="bu">sorted</span>(arr)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> s[<span class="dv">0</span>], s[<span class="op">-</span><span class="dv">1</span>]</span></code></pre></div>
+<div class="fragment">
+<p><em>C’est une solution correcte, où le développeur utilise une fonction de tri qu’il sait disponible dans à peu près tous les langages (ici Python)</em>.</p>
+</div>
 </section>
 <section class="slide level2">
 
-<h3 id="solution-pythonista">Solution <em>Pythonista</em></h3>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> min_max_pythonista(arr):</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">min</span>(arr), <span class="bu">max</span>(arr)</span></code></pre></div>
+<h4 id="solution-de-pythonista">Solution <em>de Pythonista</em></h4>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> min_max_pythonista(arr):</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">min</span>(arr), <span class="bu">max</span>(arr)</span></code></pre></div>
+<div class="fragment">
+<p><em>C’est une solution correcte aussi, où le développeur connait bien le langage Python et propose une solution “Pythonique”</em>.</p>
+</div>
 </section>
 <section class="slide level2">
 
 <h3 id="quelle-est-la-meilleure-solution">Quelle est la meilleure solution ?</h3>
 <ul>
-<li>la plus rapide à écrire ?</li>
-<li>la plus rapide à exécuter ?</li>
-<li>la plus frugale en mémoire ?</li>
-<li>la plus élégante ?</li>
+<li>la plus rapide en pratique <em>à exécuter</em> ?</li>
+<li>la plus frugale en pratique <em>en mémoire</em> ?</li>
+<li>la plus <em>élégante, lisible</em> ?</li>
+<li>la plus rapide <em>théoriquement</em> ?</li>
+<li>la plus rapide <strong>à écrire</strong> ?</li>
 </ul>
 <div class="fragment">
-<p>Pour la vitesse <strong>sur quelles données, quelle machine, quel OS</strong> ?</p>
+<p>Comment avoir une évaluation robuste des trois solutions, des prédictions quant-à leurs comportements ?</p>
 <aside class="notes">
 <p>Ne pas sous-estimer/oublier que généralement on a pas besoin de performance !</p>
 <p>Si on fait la somme du temps d’exec plus du temps de dev, Python est plus rapide que le C car on code beaucoup plus rapidement des tâches complexes</p>
+<p>Pour l’évaluation empirique des performances <strong>sur quelle machine, quel OS, quelle version de Python, quel jeu de données ?</strong></p>
 </aside>
 </div>
 </section>
-<section id="la-formation-en-informatique-dans-le-supérieur" class="slide level2">
-<h2>La formation en informatique dans le supérieur</h2>
+<section class="slide level2">
+
+<p><img data-src="code/min_max_small.png" /></p>
+</section>
+<section class="slide level2">
+
+<p><img data-src="code/min_max_large.png" /></p>
+</section>
+<section id="la-formation-en-informatique" class="slide level2">
+<h2>La formation en informatique</h2>
 <p>Science <strong>et</strong> technique <strong>et</strong> art</p>
+</section>
+<section class="slide level2">
+
 <figure>
-<img data-src="img/ML_IA_VS_MATHS.jpg" alt="ML/AI Versus Maths" /><figcaption aria-hidden="true">ML/AI Versus Maths</figcaption>
+<img data-src="img/ML_IA_VS_MATHS.jpg" alt="@SourabhSKatoch" /><figcaption aria-hidden="true"><a href="https://twitter.com/sourabhskatoch/status/1279426987744849923">@SourabhSKatoch</a></figcaption>
 </figure>
+</section>
+<section class="slide level2">
+
 <h3 id="la-licence-informatique-à-lunc">La licence Informatique à l’UNC</h3>
 </section>
 <section id="références" class="slide level2">

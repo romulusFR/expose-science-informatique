@@ -1,34 +1,16 @@
-- [Introduction](#introduction)
-  - [Présentation personnelle](#présentation-personnelle)
-    - [Formation](#formation)
-    - [Emplois](#emplois)
-    - [Avant-propos](#avant-propos)
-  - [Les informaticiens détestent les imprimantes](#les-informaticiens-détestent-les-imprimantes)
-    - [Pourquoi les informaticiens détestent-ils les imprimantes ?](#pourquoi-les-informaticiens-détestent-ils-les-imprimantes-)
-  - [Objectifs de la conférence](#objectifs-de-la-conférence)
-- [Science, technique ou art ?](#science-technique-ou-art-)
-  - [Métaphore du couteau](#métaphore-du-couteau)
-    - [Utiliser (correctement) un couteau](#utiliser-correctement-un-couteau)
-    - [Fabriquer un couteau](#fabriquer-un-couteau)
-  - [Une définition de la science informatique](#une-définition-de-la-science-informatique)
-    - [Informatics](#informatics)
-  - [Une définition en français](#une-définition-en-français)
-- [Le problème `min-max`](#le-problème-min-max)
-  - [Solution _étudiant-e en licence_](#solution-étudiant-e-en-licence)
-  - [Solution _le trieur_](#solution-le-trieur)
-  - [Solution _Pythonista_](#solution-pythonista)
-  - [Quelle est la meilleure solution ?](#quelle-est-la-meilleure-solution-)
-- [La formation en informatique dans le supérieur](#la-formation-en-informatique-dans-le-supérieur)
-  - [La licence Informatique à l'UNC](#la-licence-informatique-à-lunc)
-- [Références](#références)
-
----
-
-## Introduction
+## Introduction au séminaire
 
 ::: notes
 Exposé proposé pour l'action _"Les lycéens à la fac"_ du salon des études supérieures du 29 juillet 2022 de l'UNC (13h, Amphi A400).
 :::
+
+---
+
+- [Introduction au séminaire](#introduction-au-séminaire)
+- [L'informatique : science, technique ou art ?](#linformatique--science-technique-ou-art-)
+- [Le problème `min-max`](#le-problème-min-max)
+- [La formation en informatique](#la-formation-en-informatique)
+- [Références](#références)
 
 ---
 
@@ -50,7 +32,7 @@ Exposé proposé pour l'action _"Les lycéens à la fac"_ du salon des études s
 
 #### Avant-propos
 
-**Disclaimer** : ni philosophe, ni sociologue, ni développeur : _enseignant-chercheur en informatique_
+**Clause de non-responsabilité** : ni philosophe, ni sociologue, ni développeur : _enseignant-chercheur **en informatique**_.
 
 ::: notes
 
@@ -60,13 +42,13 @@ Beaucoup de métiers en informatique, j'en parle, mais on va centrer sur _la sci
 
 ---
 
-### Les informaticiens détestent les imprimantes
+### Les informaticiens détestent-ils les imprimantes ?
 
 ![[r/ProgrammerHumor -- I can fix it, but not because I'm a programmer](https://www.reddit.com/r/MemeTemplatesOfficial/comments/sk7nmt/will_smith_shouting_calm_shouting/)](img/printer_programmer.png)
 
 :::notes
 
-blague : l'imprimante est un animal capricieux, qui comme le poulpe, une fois au pied du mur jette de l'encre sur ses aggresseurs
+blague : l'imprimante est un decalopode capricieux, qui comme le poulpe, une fois au pied du mur jette de l'encre sur ses aggresseurs et se vexe en bourrant le papier
 
 :::
 
@@ -81,11 +63,11 @@ blague : l'imprimante est un animal capricieux, qui comme le poulpe, une fois au
 
 . . .
 
-**Ce n'est pas le métier d'un développeur**.
+Ce n'est pas le métier **d'un développeur** (ni celui d'un architecte logiciel, d'un intégrateur, d'un testeur etc).
 
 . . .
 
-**Ce n'est pas le métier d'un enseignant-chercheur**.
+Ce n'est pas non plus le métier **d'un enseignant-chercheur**.
 
 ::: notes
 
@@ -99,6 +81,14 @@ séparer l'utilisateur du concepteur va nous amener, retrospectivement à sépar
 
 ---
 
+Quels sont **ces métiers**, qu'est ce qui _les différencie_ ?
+
+. . .
+
+Une partie de la réponse est : _la science informatique_.
+
+---
+
 ### Objectifs de la conférence
 
 - rompre certaines **idées reçues** sur l'informatique et ses métiers
@@ -107,13 +97,13 @@ séparer l'utilisateur du concepteur va nous amener, retrospectivement à sépar
 
 ::: notes
 
-à l'UNC ou ailleurs
+Pour la formation, à l'UNC ou ailleurs, ce n'est pas très différent
 
 :::
 
 ---
 
-## Science, technique ou art ?
+## L'informatique : science, technique ou art ?
 
 ![[Amazon -- The Art Of Computer Programming](https://images-na.ssl-images-amazon.com/images/I/410vJZbAZGS._SY393_BO1,204,203,200_.jpg)](img/taoc.jpg)
 
@@ -121,17 +111,53 @@ séparer l'utilisateur du concepteur va nous amener, retrospectivement à sépar
 
 ### Métaphore du couteau
 
-#### Utiliser (correctement) un couteau
+Un parallèle entre _utiliser_, _réaliser_ et _penser_ un couteau en acier et un programme informatique.
+
+---
+
+#### Utiliser un couteau - l'art
 
 ![[medium.com -- How To Use Kitchen Knives ](https://medium.com/@alyarb03/how-to-use-kitchen-knives-safety-tips-5f073a98a18b)](img/using-knife-safely.jpeg)
 
 ---
 
-#### Fabriquer un couteau
+#### Fabriquer un couteau - la technique
 
-![Forging Knives in College](img/forging-blade.jpg)
+![[Industrial Heating -- Forging Knives in College](https://www.industrialheating.com/articles/95969-forging-knives-in-college)](img/forging-blade.jpg)
 
-Source [Industrial Heating -- Forging Knives in College](https://www.industrialheating.com/articles/95969-forging-knives-in-college)
+---
+
+#### Fabriquer un acier - la science
+
+![Par Cdang — Travail personnel, CC BY-SA 3.0, <https://commons.wikimedia.org/w/index.php?curid=5827078>](img/Diag_binaire_aciers_et_structure.png)
+
+::: notes
+
+L'acier a été découvert très tôt dans l'histoire car sa matière première est abondante (minerai), et qu’il est facile à travailler. L'acier « de base » est de fait peu onéreux.
+
+    fer : moins de 0,008 % de carbone en masse
+    acier : entre 0,008 et 2,11 % de carbone ;
+    fonte : teneur supérieure à 2,11 %.
+
+Diagramme binaire fer-carbone et structure cristalline des aciers à l'état recuit
+:::
+
+---
+
+#### Parallèle
+
+|               | _Acier_                           | _Informatique_               |
+| ------------- | --------------------------------- | ---------------------------- |
+| **Art**       | cuisinier                         | utilisateur                  |
+| **Technique** | artisan forgeron                  | développeur                  |
+|               | ingénieur méttalurgiste           | ingénieur informaticien      |
+| **Science**   | physico-chimiste, cristallographe | scientifique en informatique |
+
+::: notes
+
+un parallèle assez naturel, car on parle de forge, de craftmanship dans le domaine du développement
+
+:::
 
 ---
 
@@ -150,18 +176,24 @@ Source [Informatics Reference Framework for School](https://www.informaticsforal
 [La place de l'informatique dans la classification des sciences, Gilles DOWEK, 2014](https://www.lemonde.fr/blog/binaire/2014/02/05/la-place-de-linformatique-dans-la-classification-des-sciences/)
 
 > L’informatique parle d’objets de différente nature : **informations**, **langages**, **machines** et **algorithmes**.
->
-> Chacun de ces quatre concepts est _antérieur à l’informatique_, mais ce qui ce que l’informatique apporte sans doute de nouveaux est _leur organisation en une science cohérente_.
+
+::: notes
+
+Chacun de ces quatre concepts est _antérieur à l’informatique_, mais ce qui ce que l’informatique apporte sans doute de nouveaux est _leur organisation en une science cohérente_.
+
+:::
 
 ---
 
 ## Le problème `min-max`
 
-**Problème** trouver le plus grand élément et le plus petit élément d'une collection ordonnée (e.g., liste, tableau) non-vide.
+**Problème** trouver le plus grand élément **et** le plus petit élément d'une collection linéaire (e.g., liste, tableau) _non-vide_.
 
 ---
 
-### Solution _étudiant-e en licence_
+### Différentes solutions
+
+#### Solution _de l'étudiant·e_
 
 ```python
 def min_max_etudiant(arr):
@@ -176,9 +208,13 @@ def min_max_etudiant(arr):
     return the_min, the_max
 ```
 
+. . .
+
+_C'est une solution algorithmique classique : une séquence d'opérations élémentaires qui produit un résultat correct_.
+
 ---
 
-### Solution _le trieur_
+#### Solution _de développeur_
 
 ```python
 def min_max_sorter(arr):
@@ -187,28 +223,36 @@ def min_max_sorter(arr):
 
 ```
 
+. . .
+
+_C'est une solution correcte, où le développeur utilise une fonction de tri qu'il sait disponible dans à peu près tous les langages (ici Python)_.
+
 ---
 
-### Solution _Pythonista_
+#### Solution _de Pythonista_
 
 ```python
 def min_max_pythonista(arr):
     return min(arr), max(arr)
 ```
 
+. . .
+
+_C'est une solution correcte aussi, où le développeur connait bien le langage Python et propose une solution "Pythonique"_.
+
 ---
 
 ### Quelle est la meilleure solution ?
 
-
-- la plus rapide à écrire ?
-- la plus rapide à exécuter ?
-- la plus frugale en mémoire ?
-- la plus élégante ?
+- la plus rapide en pratique _à exécuter_ ?
+- la plus frugale en pratique _en mémoire_ ?
+- la plus _élégante, lisible_ ?
+- la plus rapide _théoriquement_ ?
+- la plus rapide **à écrire** ?
 
 . . .
 
-Pour la vitesse **sur quelles données, quelle machine, quel OS** ?
+Comment avoir une évaluation robuste des trois solutions, des prédictions quant-à leurs comportements ?
 
 ::: notes
 
@@ -216,15 +260,37 @@ Ne pas sous-estimer/oublier que généralement on a pas besoin de performance !
 
 Si on fait la somme du temps d'exec plus du temps de dev, Python est plus rapide que le C car on code beaucoup plus rapidement des tâches complexes
 
+Pour l'évaluation empirique des performances **sur quelle machine, quel OS, quelle version de Python, quel jeu de données ?**
+
 :::
 
-## La formation en informatique dans le supérieur
+---
+
+![](code/min_max_small.png)
+
+---
+
+![](code/min_max_large.png)
+
+---
+
+### Comment prédire ces comportements
+
+L'évaluation asymptotique de la complexité (au pire cas)
+
+## La formation en informatique
 
 Science **et** technique **et** art
 
-![ML/AI Versus Maths](img/ML_IA_VS_MATHS.jpg)
+---
+
+![[@SourabhSKatoch](https://twitter.com/sourabhskatoch/status/1279426987744849923)](img/ML_IA_VS_MATHS.jpg)
+
+---
 
 ### La licence Informatique à l'UNC
+
+---
 
 ## Références
 
