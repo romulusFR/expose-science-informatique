@@ -103,16 +103,6 @@
 </section>
 <section class="slide level2">
 
-<ul>
-<li><a href="#/introduction-au-séminaire">Introduction au séminaire</a></li>
-<li><a href="#/linformatique--science-technique-ou-art-">L’informatique : science, technique ou art ?</a></li>
-<li><a href="#/le-problème-min-max">Le problème <code>min-max</code></a></li>
-<li><a href="#/la-formation-en-informatique">La formation en informatique</a></li>
-<li><a href="#/références">Références</a></li>
-</ul>
-</section>
-<section class="slide level2">
-
 <h3 id="présentation-personnelle">Présentation personnelle</h3>
 <h4 id="formation">Formation</h4>
 <ul>
@@ -127,6 +117,10 @@
 <li>2010-2020 : Université Claude Bernard Lyon 1</li>
 <li>2020-2022 : Université de la Nouvelle-Calédonie</li>
 </ul></li>
+</ul>
+<h4 id="thématiques">Thématiques</h4>
+<ul>
+<li>bases de données, sécurité, science des données</li>
 </ul>
 </section>
 <section class="slide level2">
@@ -151,13 +145,13 @@
 
 <h4 id="pourquoi-les-informaticiens-détestent-ils-les-imprimantes">Pourquoi les informaticiens détestent-ils les imprimantes ?</h4>
 <ul>
-<li>il faut se déplacer pour tester</li>
-<li>c’est <a href="https://www.reddit.com/r/CatastrophicFailure/comments/8flfri/toner_explosion/">salissant</a></li>
-<li>il y a des humains, généralement irrités</li>
-<li>les logiciels sont propriétaires (voir <a href="https://amogh.medium.com/the-story-of-open-source-so-far-bfcb685d85a4">The Story of Open Source</a>)</li>
+<li>il faut se déplacer pour tester ?</li>
+<li>c’est <a href="https://www.reddit.com/r/CatastrophicFailure/comments/8flfri/toner_explosion/">salissant</a> ?</li>
+<li>il y a des humains, généralement irrités de la situation ?</li>
+<li>les pilotes sont fermés ? (voir <a href="https://amogh.medium.com/the-story-of-open-source-so-far-bfcb685d85a4">The Story of Open Source</a>)</li>
 </ul>
 <div class="fragment">
-<p>Ce n’est pas le métier <strong>d’un développeur</strong> (ni celui d’un architecte logiciel, d’un intégrateur, d’un testeur etc).</p>
+<p>Ce n’est pas le métier <strong>d’un développeur</strong> (ni celui d’un <em>architecte logiciel</em>, d’un <em>intégrateur</em>, d’un <em>testeur</em>, d’un <em>administrateur réseaux</em> etc).</p>
 </div>
 <div class="fragment">
 <p>Ce n’est pas non plus le métier <strong>d’un enseignant-chercheur</strong>.</p>
@@ -264,37 +258,46 @@ fonte : teneur supérieure à 2,11 %.</code></pre>
 </tbody>
 </table>
 <aside class="notes">
-<p>un parallèle assez naturel, car on parle de forge, de craftmanship dans le domaine du développement</p>
+<ul>
+<li>Une question de <strong>recul</strong> : les <em>utilisateurs</em> d’un langage de programmation <strong>sont</strong> des <em>développeurs</em>.</li>
+<li>La <em>création n’est pas descendante mais faite de va-et-vient</em> : les besoins des développeurs amènent à (re)penser les langages de programmations.
+<ul>
+<li>dans bcp de process sci, dont les maths</li>
+<li>pas de sots métiers !</li>
+</ul></li>
+<li>Acier/dev : un parallèle assez naturel, car on parle de forge, de craftmanship dans le domaine du développement</li>
+</ul>
 </aside>
 </section>
 <section class="slide level2">
 
-<h3 id="une-définition-de-la-science-informatique">Une définition de la science informatique</h3>
-<h4 id="informatics">Informatics</h4>
+<h3 id="une-définition-de-la-science-informatique-12">Une définition de la science informatique (1/2)</h3>
+<!-- #### Informatics -->
 <blockquote>
-<p>Informatics is the scientific discipline that underpins the digital world.</p>
+<p><strong>Informatics</strong> is the scientific discipline that underpins the digital world.</p>
 </blockquote>
-<p>Source <a href="https://www.informaticsforall.org/the-informatics-reference-framework-for-school-release-february-2022/">Informatics Reference Framework for School</a></p>
+<p><a href="https://www.informaticsforall.org/the-informatics-reference-framework-for-school-release-february-2022/">Informatics Reference Framework for School</a>.</p>
+<p>NDA : <em>informatics</em> synonyme de <em>computer science</em>.</p>
 </section>
 <section class="slide level2">
 
-<h3 id="une-définition-en-français">Une définition en français</h3>
-<p><a href="https://www.lemonde.fr/blog/binaire/2014/02/05/la-place-de-linformatique-dans-la-classification-des-sciences/">La place de l’informatique dans la classification des sciences, Gilles DOWEK, 2014</a></p>
+<h3 id="une-définition-de-la-science-informatique-22">Une définition de la science informatique (2/2)</h3>
 <blockquote>
 <p>L’informatique parle d’objets de différente nature : <strong>informations</strong>, <strong>langages</strong>, <strong>machines</strong> et <strong>algorithmes</strong>.</p>
 </blockquote>
+<p><a href="https://www.lemonde.fr/blog/binaire/2014/02/05/la-place-de-linformatique-dans-la-classification-des-sciences/">La place de l’informatique dans la classification des sciences, Gilles DOWEK, 2014</a></p>
 <aside class="notes">
 <p>Chacun de ces quatre concepts est <em>antérieur à l’informatique</em>, mais ce qui ce que l’informatique apporte sans doute de nouveaux est <em>leur organisation en une science cohérente</em>.</p>
 </aside>
 </section>
 <section id="le-problème-min-max" class="slide level2">
 <h2>Le problème <code>min-max</code></h2>
-<p><strong>Problème</strong> trouver le plus grand élément <strong>et</strong> le plus petit élément d’une collection linéaire (e.g., liste, tableau) <em>non-vide</em>.</p>
+<p><strong>Problème</strong> trouver <em>le plus grand</em> élément <strong>et</strong> <em>le plus petit</em> élément d’une collection linéaire (par exemple : liste, tableau) <em>non-vide</em> d’entiers naturels.</p>
 </section>
 <section class="slide level2">
 
 <h3 id="différentes-solutions">Différentes solutions</h3>
-<h4 id="solution-de-létudiante">Solution <em>de l’étudiant·e</em></h4>
+<h4 id="solution-étudiant">Solution <em>étudiant</em></h4>
 <div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> min_max_etudiant(arr):</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    the_min <span class="op">=</span> arr[<span class="dv">0</span>]</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    the_max <span class="op">=</span> arr[<span class="dv">0</span>]</span>
@@ -304,43 +307,72 @@ fonte : teneur supérieure à 2,11 %.</code></pre>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> v <span class="op">&gt;</span> the_max:</span>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>            the_max <span class="op">=</span> v</span>
 <span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> the_min, the_max</span></code></pre></div>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> the_min, the_max</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>min_max_etudiant([<span class="dv">1</span>, <span class="dv">42</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">0</span>, <span class="dv">5</span>]) <span class="co">#renvoie (0, 42)</span></span></code></pre></div>
 <div class="fragment">
-<p><em>C’est une solution algorithmique classique : une séquence d’opérations élémentaires qui produit un résultat correct</em>.</p>
+<p><em>C’est une solution classique et correcte une séquence d’opérations élémentaires, au plus proche de l’algorithmique</em>.</p>
+<aside class="notes">
+<ul>
+<li>arr est non-vide, on prend le premier</li>
+<li>classique et correcte <strong>MAIS</strong> un dev de doit jamais écrire ça !</li>
+</ul>
+</aside>
 </div>
 </section>
 <section class="slide level2">
 
-<h4 id="solution-de-développeur">Solution <em>de développeur</em></h4>
+<h4 id="solution-développeur">Solution <em>développeur</em></h4>
 <div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> min_max_sorter(arr):</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    s <span class="op">=</span> <span class="bu">sorted</span>(arr)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> s[<span class="dv">0</span>], s[<span class="op">-</span><span class="dv">1</span>]</span></code></pre></div>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># s[0] le premier élément après le tri</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># s[-1] le dernier élément après le tri</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> s[<span class="dv">0</span>], s[<span class="op">-</span><span class="dv">1</span>]</span></code></pre></div>
 <div class="fragment">
 <p><em>C’est une solution correcte, où le développeur utilise une fonction de tri qu’il sait disponible dans à peu près tous les langages (ici Python)</em>.</p>
+<aside class="notes">
+<p>mais… il y a un mais !</p>
+</aside>
 </div>
 </section>
 <section class="slide level2">
 
-<h4 id="solution-de-pythonista">Solution <em>de Pythonista</em></h4>
+<h4 id="solution-pythonista">Solution <em>Pythonista</em></h4>
 <div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> min_max_pythonista(arr):</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">min</span>(arr), <span class="bu">max</span>(arr)</span></code></pre></div>
 <div class="fragment">
 <p><em>C’est une solution correcte aussi, où le développeur connait bien le langage Python et propose une solution “Pythonique”</em>.</p>
+<aside class="notes">
+
+</aside>
 </div>
 </section>
 <section class="slide level2">
 
 <h3 id="quelle-est-la-meilleure-solution">Quelle est la meilleure solution ?</h3>
-<ul>
-<li>la plus rapide en pratique <em>à exécuter</em> ?</li>
-<li>la plus frugale en pratique <em>en mémoire</em> ?</li>
-<li>la plus <em>élégante, lisible</em> ?</li>
-<li>la plus rapide <em>théoriquement</em> ?</li>
-<li>la plus rapide <strong>à écrire</strong> ?</li>
-</ul>
+<h4 id="définir-meilleure">Définir <strong>meilleure</strong></h4>
 <div class="fragment">
-<p>Comment avoir une évaluation robuste des trois solutions, des prédictions quant-à leurs comportements ?</p>
+<ul>
+<li>la plus <em>efficace en temps</em> ?</li>
+<li>la plus <em>efficace en mémoire</em> ?</li>
+<li>la plus <em>élégante</em>, la plus <em>lisible</em> ?</li>
+<li>la plus rapide <em>à programmer</em> ?</li>
+</ul>
+</div>
+<div class="fragment">
+<p>On va ici évaluer <em>l’efficacité <strong>en temps</strong></em></p>
+</div>
+</section>
+<section class="slide level2">
+
+<h4 id="critères-defficacité-en-temps">Critères d’efficacité en temps</h4>
+<div class="fragment">
+<p>Comment avoir une <strong>évaluation robuste</strong> des trois solutions ?</p>
+</div>
+<div class="fragment">
+<p>Comment faire des <strong>prédictions</strong> quant-à leurs comportements selon la taille des données ?</p>
 <aside class="notes">
+<p>Robuste : (indépendantes des contigences matérielles), voir du modèle de calcul</p>
 <p>Ne pas sous-estimer/oublier que généralement on a pas besoin de performance !</p>
 <p>Si on fait la somme du temps d’exec plus du temps de dev, Python est plus rapide que le C car on code beaucoup plus rapidement des tâches complexes</p>
 <p>Pour l’évaluation empirique des performances <strong>sur quelle machine, quel OS, quelle version de Python, quel jeu de données ?</strong></p>
@@ -349,25 +381,203 @@ fonte : teneur supérieure à 2,11 %.</code></pre>
 </section>
 <section class="slide level2">
 
+<h4 id="évaluation-empirique-12">Évaluation empirique (1/2)</h4>
 <p><img data-src="code/min_max_small.png" /></p>
+<p><strong>Peut-on déterminer quelle est la meilleure solution ?</strong></p>
+<aside class="notes">
+<p>Pas vraiment</p>
+<p>On voit au passage que l’ordre n’est pas le même et qu’il y a de la variance.</p>
+<p>Une autre exec ne donnera pas le même résultat</p>
+</aside>
 </section>
 <section class="slide level2">
 
+<h4 id="évaluation-empirique-22">Évaluation empirique (2/2)</h4>
 <p><img data-src="code/min_max_large.png" /></p>
+<p><strong>Peut-on déterminer quelle est la meilleure solution ?</strong></p>
+</section>
+<section class="slide level2">
+
+<h3 id="la-compléxité-algorithmique">La compléxité algorithmique</h3>
+<ul>
+<li>peut-on <strong>modéliser</strong> les comportements de ces algorithmes ?
+<ul>
+<li><strong>Oui</strong> avec l’évaluation (asymptotique) de la complexité (au pire cas) en fonction de la taille de l’entrée</li>
+</ul></li>
+<li>peut-on <strong>comparer</strong> leurs comportements ?
+<ul>
+<li><strong>Oui, en partie</strong> en comparant leur complexité</li>
+</ul></li>
+<li>peut-on <strong>prédire</strong> le temps d’exécution ?
+<ul>
+<li><strong>Non</strong>, car on est dépendants de facteurs inconnus <strong>et</strong> des entrées</li>
+</ul></li>
+</ul>
+<aside class="notes">
+<p>comportements = allure des courbes</p>
+</aside>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>Que <strong>compter</strong> ?
+<ul>
+<li>le nombre comparaisons entre entiers</li>
+</ul></li>
+<li>Combien de <strong>comparaisons</strong> sont effectuées ?
+<ul>
+<li>pour <code>min_max_etudiant</code> : <em>oui</em></li>
+<li>pour <code>min_max_sorted</code> : il faut <code>min</code> et <code>max</code>
+<ul>
+<li>mais on les imagine facilement</li>
+</ul></li>
+<li>pour <code>min_max_pythonista</code> : il faut <code>sorted</code>
+<ul>
+<li>et là, c’est un peu plus compliqué…</li>
+<li>…voir <a href="https://github.com/python/cpython/blob/main/Objects/listsort.txt">le code source de <code>CPython</code></a></li>
+<li>mais on connaît les algorithmes</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="modélisation-de-min_max_etudiant">Modélisation de <code>min_max_etudiant</code></h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> min_max_etudiant(arr):</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># soit n la longueur de la séquence, n = len(arr)</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    the_min <span class="op">=</span> arr[<span class="dv">0</span>]</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    the_max <span class="op">=</span> arr[<span class="dv">0</span>]</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> v <span class="kw">in</span> arr: <span class="co"># on passe (n-1) fois dans cette boucle</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>        <span class="co"># une comparaison ici</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> v <span class="op">&lt;</span> the_min:</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>            the_min <span class="op">=</span> v</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>        <span class="co"># une autre comparaison là</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> v <span class="op">&gt;</span> the_max:</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>            the_max <span class="op">=</span> v</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> the_min, the_max</span></code></pre></div>
+<p>Pour une entrée de longueur <span class="math inline">\(n\)</span>, on effectue <span class="math inline">\(2 \times (n-1)\)</span> comparaison</p>
+<div class="fragment">
+<p>Ce qui compte, c’est <strong>l’ordre de grandeur</strong>, ici, proportionnel à <span class="math inline">\(n\)</span></p>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="comparaison-des-compléxités">Comparaison des compléxités</h3>
+<p>En utilisant la notation de Landau, dite <em>grand O</em> :</p>
+<p>Soient <span class="math inline">\(f,g : \mathbb{N} \to \mathbb{R}^+\)</span> deux applications, on dit que <em>f est dominée par g</em> (en <span class="math inline">\(+\infty\)</span>) que l’on note <span class="math inline">\(f(n) = O (g(x))\)</span> lorsqu’il existe un rang <span class="math inline">\(N \in \mathbb{N}\)</span> et une constante <span class="math inline">\(C \in \mathbb{R}^+\)</span> tels que <span class="math inline">\(\forall n &gt; N, f(n) \leq C g(x)\)</span>.</p>
+</section>
+<section class="slide level2">
+
+<table>
+<thead>
+<tr class="header">
+<th>notation</th>
+<th>compléxité</th>
+<th>exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(O(1)\)</span></td>
+<td>constante</td>
+<td>accès à un élément</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(O(log(n))\)</span></td>
+<td>logarithmique</td>
+<td>recherche dichotomique</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(O(n)\)</span></td>
+<td>linéaire</td>
+<td>recherche 👈</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(O(n.log(n))\)</span></td>
+<td></td>
+<td>“bon” tri</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(O(n^2)\)</span></td>
+<td>quadratique</td>
+<td>“mauvais” tri</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(O(n^c)\)</span></td>
+<td>polynomiale</td>
+<td>produit de matrice naïf (<span class="math inline">\(c=3\)</span>)</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(O(c^n)\)</span></td>
+<td>exponentielle</td>
+<td>voyageur de commerce</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="slide level2">
+
+<h3 id="comparaison-des-compléxités-des-solutions-min-max">Comparaison des compléxités des solutions <code>min-max</code></h3>
+<ul>
+<li><code>min_max_etudiant</code> est en <span class="math inline">\(O(n)\)</span></li>
+<li><code>min_max_pythonista</code> est en <span class="math inline">\(O(n)\)</span> également</li>
+<li><code>min_max_sorted</code> est en <span class="math inline">\(O(n.log(n))\)</span>
+<ul>
+<li>c’est <strong>moins bon</strong> : on résoud un problème trop compliqué par rapport au besoin !</li>
+</ul></li>
+</ul>
+<div class="fragment">
+<p>Ceci explique/confirme les allures des courbes !</p>
+<aside class="notes">
+<ul>
+<li>Tout est à un coefficient près</li>
+<li>Rien n’est dit sur les constantes, clairement celle de pythonista est meilleure que celle de étudiant</li>
+<li>Optimiser, c’est changer la constante mais <strong>surtout</strong> changer les ordres de grandeurs</li>
+<li>Une notion de frugalité ?</li>
+</ul>
+</aside>
+</div>
 </section>
 <section id="la-formation-en-informatique" class="slide level2">
 <h2>La formation en informatique</h2>
 <p>Science <strong>et</strong> technique <strong>et</strong> art</p>
+<div class="fragment">
+<ul>
+<li><em>science</em> : ce qui est <strong>vrai</strong></li>
+<li><em>technique</em> : ce qui est <strong>faisable</strong></li>
+<li><em>art</em> : ce qui est <strong>beau</strong></li>
+</ul>
+</div>
 </section>
 <section class="slide level2">
 
 <figure>
-<img data-src="img/ML_IA_VS_MATHS.jpg" alt="@SourabhSKatoch" /><figcaption aria-hidden="true"><a href="https://twitter.com/sourabhskatoch/status/1279426987744849923">@SourabhSKatoch</a></figcaption>
+<img data-src="img/ML_IA_VS_MATHS.jpg" alt="SourabhSKatoch" /><figcaption aria-hidden="true"><a href="https://twitter.com/sourabhskatoch/status/1279426987744849923">SourabhSKatoch</a></figcaption>
 </figure>
 </section>
 <section class="slide level2">
 
-<h3 id="la-licence-informatique-à-lunc">La licence Informatique à l’UNC</h3>
+<h3 id="programmes">Programmes</h3>
+<p>Sciences et techniques (et art) se déclinent :</p>
+<ul>
+<li><em>langages</em>
+<ul>
+<li>paradigmes de programmation, développement, compilation</li>
+</ul></li>
+<li><em>algorithmes</em>
+<ul>
+<li>structures de données, théorie de la compléxité, décidabilité, modèles de calculs</li>
+</ul></li>
+<li><em>informations</em> et <em>machines</em>
+<ul>
+<li>codage/représentation, réseau, système, informatique embarquée</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h4 id="exemple">Exemple</h4>
+<p><a href="https://unc.nc/formations/licence-informatique/" class="uri">https://unc.nc/formations/licence-informatique/</a></p>
 </section>
 <section id="références" class="slide level2">
 <h2>Références</h2>
@@ -376,6 +586,7 @@ fonte : teneur supérieure à 2,11 %.</code></pre>
 <li><a href="https://www.college-de-france.fr/site/gerard-berry/inaugural-lecture-2008-01-17-18h00.htm">Pourquoi et comment le monde devient numérique, Gérard BERRY, leçon inaugurale au collège de France, 2008</a></li>
 <li><a href="https://www.reddit.com/r/ProgrammerHumor/" class="uri">https://www.reddit.com/r/ProgrammerHumor/</a></li>
 </ul>
+<p><a href="code/minmax.ipynb">Notebook Python</a></p>
 </section>
     </div>
   </div>
