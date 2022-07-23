@@ -97,38 +97,59 @@
 
 <section id="introduction-au-séminaire" class="slide level2">
 <h2>Introduction au séminaire</h2>
+<div class="fragment">
+<h3 id="plan">Plan</h3>
+<ul>
+<li><a href="#/linformatique--science-technique-ou-même-art-">L’informatique : science, technique ou même art ?</a></li>
+<li><a href="#/lapproche-scientifique-de-lévaluation-des-performances">L’approche scientifique de l’évaluation des performances</a></li>
+<li><a href="#/la-formation-en-informatique">La formation en informatique</a></li>
+</ul>
 <aside class="notes">
 <p>Exposé proposé pour l’action <em>“Les lycéens à la fac”</em> du salon des études supérieures du 29 juillet 2022 de l’UNC (13h, Amphi A400).</p>
-</aside>
-</section>
-<section class="slide level2">
-
-<h3 id="présentation-personnelle">Présentation personnelle</h3>
-<h4 id="formation">Formation</h4>
+<p>Objectifs de la conférence :</p>
 <ul>
-<li>2004 : Ingénieur Informatique/DEA, INSA de Lyon</li>
-<li>2008 : Doctorat Informatique, INSA de Lyon</li>
-</ul>
-<h4 id="emplois">Emplois</h4>
+<li>rompre certaines <strong>idées reçues</strong> sur l’informatique et ses métiers</li>
+<li>positionner la <strong>science informatique</strong> dans le champ technique et scientifique
 <ul>
-<li>2008-2010 : postdoc INRIA Grenoble</li>
-<li>2010-2022 : maître de conférences en informatique
+<li>Beaucoup de métiers en informatique, j’en parle, mais on va centrer sur <em>la science</em></li>
+</ul></li>
+<li><strong>motiver les contenus</strong> des formations universitaires en informatique : la conclusion
 <ul>
-<li>2010-2020 : Université Claude Bernard Lyon 1</li>
-<li>2020-2022 : Université de la Nouvelle-Calédonie</li>
+<li>Pour la formation, à l’UNC ou ailleurs, ce n’est pas très différent</li>
 </ul></li>
 </ul>
-<h4 id="thématiques">Thématiques</h4>
-<ul>
-<li>bases de données, sécurité, science des données</li>
-</ul>
+</aside>
+</div>
 </section>
 <section class="slide level2">
 
-<h4 id="avant-propos">Avant-propos</h4>
+<!-- ### Présentation personnelle
+
+#### Formation
+
+- 2004 : Ingénieur Informatique/DEA, INSA de Lyon
+- 2008 : Doctorat Informatique, INSA de Lyon
+
+#### Emplois
+
+- 2008-2010 : postdoc INRIA Grenoble
+- 2010-2022 : maître de conférences en informatique
+  - 2010-2020 : Université Claude Bernard Lyon 1
+  - 2020-2022 : Université de la Nouvelle-Calédonie
+
+#### Thématiques
+
+- bases de données, sécurité, science des données
+
+---
+
+-->
+<h3 id="avant-propos">Avant-propos</h3>
 <p><strong>Clause de non-responsabilité</strong> : ni philosophe, ni sociologue, ni développeur : <em>enseignant-chercheur <strong>en informatique</strong></em>.</p>
 <aside class="notes">
-<p>Beaucoup de métiers en informatique, j’en parle, mais on va centrer sur <em>la science</em></p>
+<ul>
+<li>Bref CV à l’oral</li>
+</ul>
 </aside>
 </section>
 <section class="slide level2">
@@ -138,54 +159,37 @@
 <img data-src="img/printer_programmer.png" alt="r/ProgrammerHumor – I can fix it, but not because I’m a programmer" /><figcaption aria-hidden="true"><a href="https://www.reddit.com/r/MemeTemplatesOfficial/comments/sk7nmt/will_smith_shouting_calm_shouting/">r/ProgrammerHumor – I can fix it, but not because I’m a programmer</a></figcaption>
 </figure>
 <aside class="notes">
-<p>blague : l’imprimante est un decalopode capricieux, qui comme le poulpe, une fois au pied du mur jette de l’encre sur ses aggresseurs et se vexe en bourrant le papier</p>
-</aside>
-</section>
-<section class="slide level2">
-
-<h4 id="pourquoi-les-informaticiens-détestent-ils-les-imprimantes">Pourquoi les informaticiens détestent-ils les imprimantes ?</h4>
 <ul>
-<li>il faut se déplacer pour tester ?</li>
 <li>c’est <a href="https://www.reddit.com/r/CatastrophicFailure/comments/8flfri/toner_explosion/">salissant</a> ?</li>
 <li>il y a des humains, généralement irrités de la situation ?</li>
 <li>les pilotes sont fermés ? (voir <a href="https://amogh.medium.com/the-story-of-open-source-so-far-bfcb685d85a4">The Story of Open Source</a>)</li>
 </ul>
+</aside>
+</section>
+<section class="slide level2">
+
+<h4 id="pourquoi-les-informaticiens-détestent-ils-les-imprimantes-ces-questions">Pourquoi les informaticiens détestent-ils <del>les imprimantes</del> ces questions ?</h4>
+<p>Réparer l’imprimante, le téléphone ou le wifi n’est <strong>pas le métier</strong> <em>d’un développeur</em> (*) ni celui <em>d’un enseignant-chercheur</em>.</p>
 <div class="fragment">
-<p>Ce n’est pas le métier <strong>d’un développeur</strong> (ni celui d’un <em>architecte logiciel</em>, d’un <em>intégrateur</em>, d’un <em>testeur</em>, d’un <em>administrateur réseaux</em> etc).</p>
+<p>(*) ni celui d’un <em>architecte logiciel</em>, d’un <em>intégrateur</em>, d’un <em>testeur</em>, d’un <em>administrateur réseaux</em>.</p>
 </div>
 <div class="fragment">
-<p>Ce n’est pas non plus le métier <strong>d’un enseignant-chercheur</strong>.</p>
+<p>Quels sont <strong>ces métiers</strong>, qu’est ce qui <em>les différencie</em>, notamment vis-à-vis de <em>la science informatique</em>.</p>
 <aside class="notes">
-<p>Les grosses <strong>questions</strong> :</p>
-<ul>
-<li>quels sont ces métiers ?</li>
-<li>qu’est ce qui les différencie ?</li>
-</ul>
 <p>séparer l’utilisateur du concepteur va nous amener, retrospectivement à séparer le du développeur/concepteur du chercheur/scientifique</p>
 </aside>
 </div>
 </section>
-<section class="slide level2">
-
-<p>Quels sont <strong>ces métiers</strong>, qu’est ce qui <em>les différencie</em> ?</p>
-<div class="fragment">
-<p>Une partie de la réponse est : <em>la science informatique</em>.</p>
-</div>
-</section>
-<section class="slide level2">
-
-<h3 id="objectifs-de-la-conférence">Objectifs de la conférence</h3>
+<section id="linformatique-science-technique-ou-même-art" class="slide level2">
+<h2>L’informatique : science, technique ou même art ?</h2>
 <ul>
-<li>rompre certaines <strong>idées reçues</strong> sur l’informatique et ses métiers</li>
-<li>positionner la <strong>science informatique</strong> dans le champ technique et scientifique</li>
-<li><strong>motiver les contenus</strong> des formations universitaires en informatique</li>
+<li><em>science</em> : la connaissance</li>
+<li><em>technique</em> : la résolution de problème</li>
+<li><em>art</em> : la créativité</li>
 </ul>
-<aside class="notes">
-<p>Pour la formation, à l’UNC ou ailleurs, ce n’est pas très différent</p>
-</aside>
 </section>
-<section id="linformatique-science-technique-ou-art" class="slide level2">
-<h2>L’informatique : science, technique ou art ?</h2>
+<section class="slide level2">
+
 <figure>
 <img data-src="img/taoc.jpg" alt="Amazon – The Art Of Computer Programming" /><figcaption aria-hidden="true"><a href="https://images-na.ssl-images-amazon.com/images/I/410vJZbAZGS._SY393_BO1,204,203,200_.jpg">Amazon – The Art Of Computer Programming</a></figcaption>
 </figure>
@@ -197,21 +201,22 @@
 </section>
 <section class="slide level2">
 
-<h4 id="utiliser-un-couteau---lart">Utiliser un couteau - l’art</h4>
+<h4 id="utiliser-un-couteau">Utiliser un couteau</h4>
+<!-- ![[medium.com -- How To Use Kitchen Knives ](https://medium.com/@alyarb03/how-to-use-kitchen-knives-safety-tips-5f073a98a18b)](img/using-knife-safely.jpeg) -->
 <figure>
-<img data-src="img/using-knife-safely.jpeg" alt="medium.com – How To Use Kitchen Knives" /><figcaption aria-hidden="true"><a href="https://medium.com/@alyarb03/how-to-use-kitchen-knives-safety-tips-5f073a98a18b">medium.com – How To Use Kitchen Knives</a></figcaption>
+<img data-src="img/chef_knife.png" alt="The Spruce Eats – How to Use A Chef’s Knife" /><figcaption aria-hidden="true"><a href="https://www.thespruceeats.com/how-to-use-a-chefs-knife-995812">The Spruce Eats – How to Use A Chef’s Knife</a></figcaption>
 </figure>
 </section>
 <section class="slide level2">
 
-<h4 id="fabriquer-un-couteau---la-technique">Fabriquer un couteau - la technique</h4>
+<h4 id="réaliser-un-couteau">Réaliser un couteau</h4>
 <figure>
 <img data-src="img/forging-blade.jpg" alt="Industrial Heating – Forging Knives in College" /><figcaption aria-hidden="true"><a href="https://www.industrialheating.com/articles/95969-forging-knives-in-college">Industrial Heating – Forging Knives in College</a></figcaption>
 </figure>
 </section>
 <section class="slide level2">
 
-<h4 id="fabriquer-un-acier---la-science">Fabriquer un acier - la science</h4>
+<h4 id="penser-un-couteau">Penser un couteau</h4>
 <figure>
 <img data-src="img/Diag_binaire_aciers_et_structure.png" alt="Par Cdang — Travail personnel, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=5827078" /><figcaption aria-hidden="true">Par Cdang — Travail personnel, CC BY-SA 3.0, <a href="https://commons.wikimedia.org/w/index.php?curid=5827078" class="uri">https://commons.wikimedia.org/w/index.php?curid=5827078</a></figcaption>
 </figure>
@@ -230,13 +235,13 @@ fonte : teneur supérieure à 2,11 %.</code></pre>
 <thead>
 <tr class="header">
 <th></th>
-<th><em>Acier</em></th>
-<th><em>Informatique</em></th>
+<th><em>Couteau</em></th>
+<th><em>Programme</em></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Art</strong></td>
+<td><strong>Utilisation</strong></td>
 <td>cuisinier</td>
 <td>utilisateur</td>
 </tr>
@@ -284,34 +289,36 @@ fonte : teneur supérieure à 2,11 %.</code></pre>
 <h3 id="une-définition-de-la-science-informatique-22">Une définition de la science informatique (2/2)</h3>
 <blockquote>
 <p>L’informatique parle d’objets de différente nature : <strong>informations</strong>, <strong>langages</strong>, <strong>machines</strong> et <strong>algorithmes</strong>.</p>
+<p>Chacun de ces quatre concepts est <em>antérieur à l’informatique</em>, mais ce qui ce que l’informatique apporte sans doute de nouveaux est <strong>leur organisation en une science cohérente</strong>.</p>
 </blockquote>
 <p><a href="https://www.lemonde.fr/blog/binaire/2014/02/05/la-place-de-linformatique-dans-la-classification-des-sciences/">La place de l’informatique dans la classification des sciences, Gilles DOWEK, 2014</a></p>
 <aside class="notes">
-<p>Chacun de ces quatre concepts est <em>antérieur à l’informatique</em>, mais ce qui ce que l’informatique apporte sans doute de nouveaux est <em>leur organisation en une science cohérente</em>.</p>
+
 </aside>
 </section>
-<section id="le-problème-min-max" class="slide level2">
-<h2>Le problème <code>min-max</code></h2>
-<p><strong>Problème</strong> trouver <em>le plus grand</em> élément <strong>et</strong> <em>le plus petit</em> élément d’une collection linéaire (par exemple : liste, tableau) <em>non-vide</em> d’entiers naturels.</p>
+<section id="lapproche-scientifique-de-lévaluation-des-performances" class="slide level2">
+<h2>L’approche scientifique de l’évaluation des performances</h2>
+<h3 id="le-problème-min-max">Le problème <code>min-max</code></h3>
+<p><strong>Problème</strong> trouver <em>le plus grand</em> élément <strong>et</strong> <em>le plus petit</em> élément d’une collection linéaire <em>non-vide</em> d’entiers naturels (par exemple : liste, tableau).</p>
 </section>
 <section class="slide level2">
 
-<h3 id="différentes-solutions">Différentes solutions</h3>
+<h3 id="différentes-solutions-python">Différentes solutions Python</h3>
 <h4 id="solution-étudiant">Solution <em>étudiant</em></h4>
 <div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> min_max_etudiant(arr):</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    the_min <span class="op">=</span> arr[<span class="dv">0</span>]</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    the_max <span class="op">=</span> arr[<span class="dv">0</span>]</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    min_courant <span class="op">=</span> arr[<span class="dv">0</span>]</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    max_courant <span class="op">=</span> arr[<span class="dv">0</span>]</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> v <span class="kw">in</span> arr:</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> v <span class="op">&lt;</span> the_min:</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>            the_min <span class="op">=</span> v</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> v <span class="op">&gt;</span> the_max:</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>            the_max <span class="op">=</span> v</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> v <span class="op">&lt;</span> min_courant:</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>            min_courant <span class="op">=</span> v</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> v <span class="op">&gt;</span> max_courant:</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>            max_courant <span class="op">=</span> v</span>
 <span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> the_min, the_max</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> min_courant, max_courant</span>
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>min_max_etudiant([<span class="dv">1</span>, <span class="dv">42</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">0</span>, <span class="dv">5</span>]) <span class="co">#renvoie (0, 42)</span></span></code></pre></div>
 <div class="fragment">
-<p><em>C’est une solution classique et correcte une séquence d’opérations élémentaires, au plus proche de l’algorithmique</em>.</p>
+<p><em>C’est une solution classique et correcte : une suite d’opérations élémentaires, au plus proche de l’algorithmique</em>.</p>
 <aside class="notes">
 <ul>
 <li>arr est non-vide, on prend le premier</li>
@@ -324,12 +331,12 @@ fonte : teneur supérieure à 2,11 %.</code></pre>
 
 <h4 id="solution-développeur">Solution <em>développeur</em></h4>
 <div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> min_max_sorter(arr):</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    s <span class="op">=</span> <span class="bu">sorted</span>(arr)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># s[0] le premier élément après le tri</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># s[-1] le dernier élément après le tri</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> s[<span class="dv">0</span>], s[<span class="op">-</span><span class="dv">1</span>]</span></code></pre></div>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    arr_trie <span class="op">=</span> <span class="bu">sorted</span>(arr)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># arr_trie[0] le premier élément après le tri</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># arr_trie[-1] le dernier élément après le tri</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> arr_trie[<span class="dv">0</span>], arr_trie[<span class="op">-</span><span class="dv">1</span>]</span></code></pre></div>
 <div class="fragment">
-<p><em>C’est une solution correcte, où le développeur utilise une fonction de tri qu’il sait disponible dans à peu près tous les langages (ici Python)</em>.</p>
+<p><em>C’est une solution correcte, où le développeur utilise une fonction de tri qu’il sait disponible dans à peu près tous les langages</em>.</p>
 <aside class="notes">
 <p>mais… il y a un mais !</p>
 </aside>
@@ -400,49 +407,32 @@ fonte : teneur supérieure à 2,11 %.</code></pre>
 
 <h3 id="la-compléxité-algorithmique">La compléxité algorithmique</h3>
 <ul>
-<li>peut-on <strong>modéliser</strong> les comportements de ces algorithmes ?
+<li>Peut-on <strong>modéliser</strong> les comportements de ces algorithmes ?
 <ul>
-<li><strong>Oui</strong> avec l’évaluation (asymptotique) de la complexité (au pire cas) en fonction de la taille de l’entrée</li>
+<li><strong>Oui</strong>, avec la <em>complexité asymptotique en temps</em></li>
 </ul></li>
-<li>peut-on <strong>comparer</strong> leurs comportements ?
+<li>Peut-on <strong>comparer</strong> leurs comportements ?
 <ul>
 <li><strong>Oui, en partie</strong> en comparant leur complexité</li>
 </ul></li>
-<li>peut-on <strong>prédire</strong> le temps d’exécution ?
+<li>Peut-on <strong>prédire</strong> le temps d’exécution ?
 <ul>
-<li><strong>Non</strong>, car on est dépendants de facteurs inconnus <strong>et</strong> des entrées</li>
+<li><strong>Non</strong>, car à un facteur près</li>
 </ul></li>
 </ul>
 <aside class="notes">
 <p>comportements = allure des courbes</p>
+<p>détails des trois questions :</p>
+<p>On va compter le nombre de <strong>comparaisons entre entiers</strong>.</p>
+<ul>
+<li>avec l’évaluation (asymptotique) de la complexité (au pire cas) en fonction de la taille de l’entrée</li>
+<li>, car on est dépendants de facteurs inconnus et des entrées</li>
+</ul>
 </aside>
 </section>
 <section class="slide level2">
 
-<ul>
-<li>Que <strong>compter</strong> ?
-<ul>
-<li>le nombre comparaisons entre entiers</li>
-</ul></li>
-<li>Combien de <strong>comparaisons</strong> sont effectuées ?
-<ul>
-<li>pour <code>min_max_etudiant</code> : <em>oui</em></li>
-<li>pour <code>min_max_sorted</code> : il faut <code>min</code> et <code>max</code>
-<ul>
-<li>mais on les imagine facilement</li>
-</ul></li>
-<li>pour <code>min_max_pythonista</code> : il faut <code>sorted</code>
-<ul>
-<li>et là, c’est un peu plus compliqué…</li>
-<li>…voir <a href="https://github.com/python/cpython/blob/main/Objects/listsort.txt">le code source de <code>CPython</code></a></li>
-<li>mais on connaît les algorithmes</li>
-</ul></li>
-</ul></li>
-</ul>
-</section>
-<section class="slide level2">
-
-<h3 id="modélisation-de-min_max_etudiant">Modélisation de <code>min_max_etudiant</code></h3>
+<h3 id="déterminer-le-nombre-de-comparaisons">Déterminer le nombre de comparaisons</h3>
 <div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> min_max_etudiant(arr):</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># soit n la longueur de la séquence, n = len(arr)</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    the_min <span class="op">=</span> arr[<span class="dv">0</span>]</span>
@@ -455,7 +445,9 @@ fonte : teneur supérieure à 2,11 %.</code></pre>
 <span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> v <span class="op">&gt;</span> the_max:</span>
 <span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>            the_max <span class="op">=</span> v</span>
 <span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> the_min, the_max</span></code></pre></div>
-<p>Pour une entrée de longueur <span class="math inline">\(n\)</span>, on effectue <span class="math inline">\(2 \times (n-1)\)</span> comparaison</p>
+<div class="fragment">
+<p>Pour une entrée de longueur <span class="math inline">\(n\)</span>, on effectue <span class="math inline">\(2 \times (n-1)\)</span> comparaisons</p>
+</div>
 <div class="fragment">
 <p>Ce qui compte, c’est <strong>l’ordre de grandeur</strong>, ici, proportionnel à <span class="math inline">\(n\)</span></p>
 </div>
@@ -463,7 +455,7 @@ fonte : teneur supérieure à 2,11 %.</code></pre>
 <section class="slide level2">
 
 <h3 id="comparaison-des-compléxités">Comparaison des compléxités</h3>
-<p>En utilisant la notation de Landau, dite <em>grand O</em> :</p>
+<p>En utilisant la notation de Landau, dite <em>grand</em> <span class="math inline">\(O\)</span> :</p>
 <p>Soient <span class="math inline">\(f,g : \mathbb{N} \to \mathbb{R}^+\)</span> deux applications, on dit que <em>f est dominée par g</em> (en <span class="math inline">\(+\infty\)</span>) que l’on note <span class="math inline">\(f(n) = O (g(x))\)</span> lorsqu’il existe un rang <span class="math inline">\(N \in \mathbb{N}\)</span> et une constante <span class="math inline">\(C \in \mathbb{R}^+\)</span> tels que <span class="math inline">\(\forall n &gt; N, f(n) \leq C g(x)\)</span>.</p>
 </section>
 <section class="slide level2">
@@ -520,34 +512,34 @@ fonte : teneur supérieure à 2,11 %.</code></pre>
 <h3 id="comparaison-des-compléxités-des-solutions-min-max">Comparaison des compléxités des solutions <code>min-max</code></h3>
 <ul>
 <li><code>min_max_etudiant</code> est en <span class="math inline">\(O(n)\)</span></li>
-<li><code>min_max_pythonista</code> est en <span class="math inline">\(O(n)\)</span> également</li>
+<li><code>min_max_pythonista</code> est en <span class="math inline">\(O(n)\)</span>
+<ul>
+<li>car <code>min</code> et <code>max</code> le sont</li>
+</ul></li>
 <li><code>min_max_sorted</code> est en <span class="math inline">\(O(n.log(n))\)</span>
 <ul>
-<li>c’est <strong>moins bon</strong> : on résoud un problème trop compliqué par rapport au besoin !</li>
+<li>car c’est la compléxité de <code>sorted</code></li>
+<li>on résoud un problème <strong>trop compliqué</strong> !</li>
 </ul></li>
 </ul>
-<div class="fragment">
-<p>Ceci explique/confirme les allures des courbes !</p>
 <aside class="notes">
 <ul>
 <li>Tout est à un coefficient près</li>
 <li>Rien n’est dit sur les constantes, clairement celle de pythonista est meilleure que celle de étudiant</li>
 <li>Optimiser, c’est changer la constante mais <strong>surtout</strong> changer les ordres de grandeurs</li>
-<li>Une notion de frugalité ?</li>
+<li>Une notion de frugalité : ne pas utiliser un algo générique/trop puissantpour un problème simple</li>
 </ul>
+<p>Ceci explique/confirme les allures des courbes !</p>
 </aside>
-</div>
 </section>
 <section id="la-formation-en-informatique" class="slide level2">
 <h2>La formation en informatique</h2>
 <p>Science <strong>et</strong> technique <strong>et</strong> art</p>
-<div class="fragment">
-<ul>
-<li><em>science</em> : ce qui est <strong>vrai</strong></li>
-<li><em>technique</em> : ce qui est <strong>faisable</strong></li>
-<li><em>art</em> : ce qui est <strong>beau</strong></li>
-</ul>
-</div>
+<!-- . . .
+
+- _science_ : ce qui est **vrai**
+- _technique_ : ce qui est **faisable**
+- _art_ : ce qui est **beau** -->
 </section>
 <section class="slide level2">
 
@@ -582,11 +574,11 @@ fonte : teneur supérieure à 2,11 %.</code></pre>
 <section id="références" class="slide level2">
 <h2>Références</h2>
 <ul>
+<li><a href="code/minmax.ipynb">Notebook Python des exemples <code>min-max</code></a></li>
 <li><a href="https://fr.wikipedia.org/wiki/%C3%89pist%C3%A9mologie_de_l%27informatique">Épistémologie de l’informatique, WIKIPEDIA</a></li>
 <li><a href="https://www.college-de-france.fr/site/gerard-berry/inaugural-lecture-2008-01-17-18h00.htm">Pourquoi et comment le monde devient numérique, Gérard BERRY, leçon inaugurale au collège de France, 2008</a></li>
 <li><a href="https://www.reddit.com/r/ProgrammerHumor/" class="uri">https://www.reddit.com/r/ProgrammerHumor/</a></li>
 </ul>
-<p><a href="code/minmax.ipynb">Notebook Python</a></p>
 </section>
     </div>
   </div>

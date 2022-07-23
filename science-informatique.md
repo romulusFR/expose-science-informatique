@@ -1,12 +1,30 @@
 ## Introduction au séminaire
 
+. . .
+
+### Plan
+
+- [L'informatique : science, technique ou même art ?](#linformatique--science-technique-ou-même-art-)
+- [L'approche scientifique de l'évaluation des performances](#lapproche-scientifique-de-lévaluation-des-performances)
+- [La formation en informatique](#la-formation-en-informatique)
+
 ::: notes
+
 Exposé proposé pour l'action _"Les lycéens à la fac"_ du salon des études supérieures du 29 juillet 2022 de l'UNC (13h, Amphi A400).
+
+Objectifs de la conférence :
+
+- rompre certaines **idées reçues** sur l'informatique et ses métiers
+- positionner la **science informatique** dans le champ technique et scientifique
+  - Beaucoup de métiers en informatique, j'en parle, mais on va centrer sur _la science_
+- **motiver les contenus** des formations universitaires en informatique : la conclusion
+  - Pour la formation, à l'UNC ou ailleurs, ce n'est pas très différent
+
 :::
 
 ---
 
-### Présentation personnelle
+<!-- ### Présentation personnelle
 
 #### Formation
 
@@ -26,13 +44,15 @@ Exposé proposé pour l'action _"Les lycéens à la fac"_ du salon des études s
 
 ---
 
-#### Avant-propos
+-->
+
+### Avant-propos
 
 **Clause de non-responsabilité** : ni philosophe, ni sociologue, ni développeur : _enseignant-chercheur **en informatique**_.
 
 ::: notes
 
-Beaucoup de métiers en informatique, j'en parle, mais on va centrer sur _la science_
+- Bref CV à l'oral
 
 :::
 
@@ -42,64 +62,42 @@ Beaucoup de métiers en informatique, j'en parle, mais on va centrer sur _la sci
 
 ![[r/ProgrammerHumor -- I can fix it, but not because I'm a programmer](https://www.reddit.com/r/MemeTemplatesOfficial/comments/sk7nmt/will_smith_shouting_calm_shouting/)](img/printer_programmer.png)
 
-:::notes
+::: notes
 
-blague : l'imprimante est un decalopode capricieux, qui comme le poulpe, une fois au pied du mur jette de l'encre sur ses aggresseurs et se vexe en bourrant le papier
+- c'est [salissant](https://www.reddit.com/r/CatastrophicFailure/comments/8flfri/toner_explosion/) ?
+- il y a des humains, généralement irrités de la situation ?
+- les pilotes sont fermés ? (voir [The Story of Open Source](https://amogh.medium.com/the-story-of-open-source-so-far-bfcb685d85a4))
 
 :::
 
 ---
 
-#### Pourquoi les informaticiens détestent-ils les imprimantes ?
+#### Pourquoi les informaticiens détestent-ils ~~les imprimantes~~ ces questions ?
 
-- il faut se déplacer pour tester ?
-- c'est [salissant](https://www.reddit.com/r/CatastrophicFailure/comments/8flfri/toner_explosion/) ?
-- il y a des humains, généralement irrités de la situation ?
-- les pilotes sont fermés ? (voir [The Story of Open Source](https://amogh.medium.com/the-story-of-open-source-so-far-bfcb685d85a4))
+Réparer l'imprimante, le téléphone ou le wifi n'est **pas le métier** _d'un développeur_ (\*) ni celui _d'un enseignant-chercheur_.
 
 . . .
 
-Ce n'est pas le métier **d'un développeur** (ni celui d'un _architecte logiciel_, d'un _intégrateur_, d'un _testeur_, d'un _administrateur réseaux_ etc).
+(\*) ni celui d'un _architecte logiciel_, d'un _intégrateur_, d'un _testeur_, d'un _administrateur réseaux_.
 
 . . .
 
-Ce n'est pas non plus le métier **d'un enseignant-chercheur**.
+Quels sont **ces métiers**, qu'est ce qui _les différencie_, notamment vis-à-vis de _la science informatique_.
 
 ::: notes
-
-Les grosses **questions** :
-
-- quels sont ces métiers ?
-- qu'est ce qui les différencie ?
 
 séparer l'utilisateur du concepteur va nous amener, retrospectivement à séparer le du développeur/concepteur du chercheur/scientifique
 :::
 
 ---
 
-Quels sont **ces métiers**, qu'est ce qui _les différencie_ ?
+## L'informatique : science, technique ou même art ?
 
-. . .
-
-Une partie de la réponse est : _la science informatique_.
-
----
-
-### Objectifs de la conférence
-
-- rompre certaines **idées reçues** sur l'informatique et ses métiers
-- positionner la **science informatique** dans le champ technique et scientifique
-- **motiver les contenus** des formations universitaires en informatique
-
-::: notes
-
-Pour la formation, à l'UNC ou ailleurs, ce n'est pas très différent
-
-:::
+- _science_ : la connaissance
+- _technique_ : la résolution de problème
+- _art_ : la créativité
 
 ---
-
-## L'informatique : science, technique ou art ?
 
 ![[Amazon -- The Art Of Computer Programming](https://images-na.ssl-images-amazon.com/images/I/410vJZbAZGS._SY393_BO1,204,203,200_.jpg)](img/taoc.jpg)
 
@@ -111,19 +109,21 @@ Un parallèle entre _utiliser_, _réaliser_ et _penser_ un couteau en acier et u
 
 ---
 
-#### Utiliser un couteau - l'art
+#### Utiliser un couteau
 
-![[medium.com -- How To Use Kitchen Knives ](https://medium.com/@alyarb03/how-to-use-kitchen-knives-safety-tips-5f073a98a18b)](img/using-knife-safely.jpeg)
+<!-- ![[medium.com -- How To Use Kitchen Knives ](https://medium.com/@alyarb03/how-to-use-kitchen-knives-safety-tips-5f073a98a18b)](img/using-knife-safely.jpeg) -->
+
+![[The Spruce Eats -- How to Use A Chef's Knife](https://www.thespruceeats.com/how-to-use-a-chefs-knife-995812)](img/chef_knife.png)
 
 ---
 
-#### Fabriquer un couteau - la technique
+#### Réaliser un couteau
 
 ![[Industrial Heating -- Forging Knives in College](https://www.industrialheating.com/articles/95969-forging-knives-in-college)](img/forging-blade.jpg)
 
 ---
 
-#### Fabriquer un acier - la science
+#### Penser un couteau
 
 ![Par Cdang — Travail personnel, CC BY-SA 3.0, <https://commons.wikimedia.org/w/index.php?curid=5827078>](img/Diag_binaire_aciers_et_structure.png)
 
@@ -142,12 +142,12 @@ Diagramme binaire fer-carbone et structure cristalline des aciers à l'état rec
 
 #### Parallèle
 
-|               | _Acier_                           | _Informatique_               |
-| ------------- | --------------------------------- | ---------------------------- |
-| **Art**       | cuisinier                         | utilisateur                  |
-| **Technique** | artisan forgeron                  | développeur                  |
-|               | ingénieur méttalurgiste           | ingénieur informaticien      |
-| **Science**   | physico-chimiste, cristallographe | scientifique en informatique |
+|                 | _Couteau_                         | _Programme_                  |
+| --------------- | --------------------------------- | ---------------------------- |
+| **Utilisation** | cuisinier                         | utilisateur                  |
+| **Technique**   | artisan forgeron                  | développeur                  |
+|                 | ingénieur méttalurgiste           | ingénieur informaticien      |
+| **Science**     | physico-chimiste, cristallographe | scientifique en informatique |
 
 ::: notes
 
@@ -176,45 +176,47 @@ NDA : _informatics_ synonyme de _computer science_.
 ### Une définition de la science informatique (2/2)
 
 > L’informatique parle d’objets de différente nature : **informations**, **langages**, **machines** et **algorithmes**.
+>
+> Chacun de ces quatre concepts est _antérieur à l’informatique_, mais ce qui ce que l’informatique apporte sans doute de nouveaux est **leur organisation en une science cohérente**.
 
 [La place de l'informatique dans la classification des sciences, Gilles DOWEK, 2014](https://www.lemonde.fr/blog/binaire/2014/02/05/la-place-de-linformatique-dans-la-classification-des-sciences/)
 
 ::: notes
 
-Chacun de ces quatre concepts est _antérieur à l’informatique_, mais ce qui ce que l’informatique apporte sans doute de nouveaux est _leur organisation en une science cohérente_.
-
 :::
 
 ---
 
-## Le problème `min-max`
+## L'approche scientifique de l'évaluation des performances
 
-**Problème** trouver _le plus grand_ élément **et** _le plus petit_ élément d'une collection linéaire (par exemple : liste, tableau) _non-vide_ d'entiers naturels.
+### Le problème `min-max`
+
+**Problème** trouver _le plus grand_ élément **et** _le plus petit_ élément d'une collection linéaire _non-vide_ d'entiers naturels (par exemple : liste, tableau).
 
 ---
 
-### Différentes solutions
+### Différentes solutions Python
 
 #### Solution _étudiant_
 
 ```python
 def min_max_etudiant(arr):
-    the_min = arr[0]
-    the_max = arr[0]
+    min_courant = arr[0]
+    max_courant = arr[0]
     for v in arr:
-        if v < the_min:
-            the_min = v
-        if v > the_max:
-            the_max = v
+        if v < min_courant:
+            min_courant = v
+        if v > max_courant:
+            max_courant = v
 
-    return the_min, the_max
+    return min_courant, max_courant
 
 min_max_etudiant([1, 42, 3, 2, 0, 5]) #renvoie (0, 42)
 ```
 
 . . .
 
-_C'est une solution classique et correcte une séquence d'opérations élémentaires, au plus proche de l'algorithmique_.
+_C'est une solution classique et correcte : une suite d'opérations élémentaires, au plus proche de l'algorithmique_.
 
 ::: notes
 
@@ -229,15 +231,15 @@ _C'est une solution classique et correcte une séquence d'opérations élémenta
 
 ```python
 def min_max_sorter(arr):
-    s = sorted(arr)
-    # s[0] le premier élément après le tri
-    # s[-1] le dernier élément après le tri
-    return s[0], s[-1]
+    arr_trie = sorted(arr)
+    # arr_trie[0] le premier élément après le tri
+    # arr_trie[-1] le dernier élément après le tri
+    return arr_trie[0], arr_trie[-1]
 ```
 
 . . .
 
-_C'est une solution correcte, où le développeur utilise une fonction de tri qu'il sait disponible dans à peu près tous les langages (ici Python)_.
+_C'est une solution correcte, où le développeur utilise une fonction de tri qu'il sait disponible dans à peu près tous les langages_.
 
 ::: notes
 mais... il y a un mais !
@@ -331,34 +333,29 @@ Une autre exec ne donnera pas le même résultat
 
 ### La compléxité algorithmique
 
-- peut-on **modéliser** les comportements de ces algorithmes ?
-  - **Oui** avec l'évaluation (asymptotique) de la complexité (au pire cas) en fonction de la taille de l'entrée
-- peut-on **comparer** leurs comportements ?
+- Peut-on **modéliser** les comportements de ces algorithmes ?
+  - **Oui**, avec la _complexité asymptotique en temps_
+- Peut-on **comparer** leurs comportements ?
   - **Oui, en partie** en comparant leur complexité
-- peut-on **prédire** le temps d'exécution ?
-  - **Non**, car on est dépendants de facteurs inconnus **et** des entrées
+- Peut-on **prédire** le temps d'exécution ?
+  - **Non**, car à un facteur près
 
 ::: notes
+
 comportements = allure des courbes
+
+détails des trois questions :
+
+On va compter le nombre de **comparaisons entre entiers**.
+
+- avec l'évaluation (asymptotique) de la complexité (au pire cas) en fonction de la taille de l'entrée
+- , car on est dépendants de facteurs inconnus et des entrées
 
 :::
 
 ---
 
-- Que **compter** ?
-  - le nombre comparaisons entre entiers
-- Combien de **comparaisons** sont effectuées ?
-  - pour `min_max_etudiant` : _oui_
-  - pour `min_max_sorted` : il faut `min` et `max`
-    - mais on les imagine facilement
-  - pour `min_max_pythonista` : il faut `sorted`
-    - et là, c'est un peu plus compliqué...
-    - ...voir [le code source de `CPython`](https://github.com/python/cpython/blob/main/Objects/listsort.txt)
-    - mais on connaît les algorithmes
-
----
-
-### Modélisation de `min_max_etudiant`
+### Déterminer le nombre de comparaisons
 
 ```python
 def min_max_etudiant(arr):
@@ -375,7 +372,9 @@ def min_max_etudiant(arr):
     return the_min, the_max
 ```
 
-Pour une entrée de longueur $n$, on effectue $2 \times (n-1)$ comparaison
+. . .
+
+Pour une entrée de longueur $n$, on effectue $2 \times (n-1)$ comparaisons
 
 . . .
 
@@ -385,7 +384,7 @@ Ce qui compte, c'est **l'ordre de grandeur**, ici, proportionnel à $n$
 
 ### Comparaison des compléxités
 
-En utilisant la notation de Landau, dite _grand O_ :
+En utilisant la notation de Landau, dite _grand_ $O$ :
 
 Soient $f,g : \mathbb{N} \to \mathbb{R}^+$ deux applications, on dit que _f est dominée par g_ (en $+\infty$) que l'on note $f(n) = O (g(x))$ lorsqu'il existe un rang $N \in \mathbb{N}$ et une constante $C \in \mathbb{R}^+$ tels que $\forall n > N, f(n) \leq C g(x)$.
 
@@ -406,20 +405,20 @@ Soient $f,g : \mathbb{N} \to \mathbb{R}^+$ deux applications, on dit que _f est 
 ### Comparaison des compléxités des solutions `min-max`
 
 - `min_max_etudiant` est en $O(n)$
-- `min_max_pythonista` est en $O(n)$ également
+- `min_max_pythonista` est en $O(n)$
+  - car `min` et `max` le sont
 - `min_max_sorted` est en $O(n.log(n))$
-  - c'est **moins bon** : on résoud un problème trop compliqué par rapport au besoin !
-
-. . .
-
-Ceci explique/confirme les allures des courbes !
+  - car c'est la compléxité de `sorted`
+  - on résoud un problème **trop compliqué** !
 
 ::: notes
 
 - Tout est à un coefficient près
 - Rien n'est dit sur les constantes, clairement celle de pythonista est meilleure que celle de étudiant
 - Optimiser, c'est changer la constante mais **surtout** changer les ordres de grandeurs
-- Une notion de frugalité ?
+- Une notion de frugalité : ne pas utiliser un algo générique/trop puissantpour un problème simple
+
+Ceci explique/confirme les allures des courbes !
 
 :::
 
@@ -429,11 +428,11 @@ Ceci explique/confirme les allures des courbes !
 
 Science **et** technique **et** art
 
-. . .
+<!-- . . .
 
 - _science_ : ce qui est **vrai**
 - _technique_ : ce qui est **faisable**
-- _art_ : ce qui est **beau**
+- _art_ : ce qui est **beau** -->
 
 ---
 
@@ -462,8 +461,7 @@ Sciences et techniques (et art) se déclinent :
 
 ## Références
 
+- [Notebook Python des exemples `min-max`](code/minmax.ipynb)
 - [Épistémologie de l'informatique, WIKIPEDIA](https://fr.wikipedia.org/wiki/%C3%89pist%C3%A9mologie_de_l%27informatique)
 - [Pourquoi et comment le monde devient numérique, Gérard BERRY, leçon inaugurale au collège de France, 2008](https://www.college-de-france.fr/site/gerard-berry/inaugural-lecture-2008-01-17-18h00.htm)
 - <https://www.reddit.com/r/ProgrammerHumor/>
-
-[Notebook Python](code/minmax.ipynb)
