@@ -1,16 +1,23 @@
 title: La science informatique
-author: romuald.thion@unc.nc
-subtitle: _ou pourquoi je ne vais ni réparer ton  imprimante ni hacker ton Insta_
-date: 29 juillet 2022
+author:
+  - romuald.thion@unc.nc
+  - <https://romulusfr.github.io/expose-science-informatique/>
+subtitle: _"pourquoi je ne vais ni réparer ton  imprimante ni hacker ton Insta"_
+date: 29 juillet 2022, "les lycéens à la fac", UNC
 keywords: [informatique, UNC]
 abstract: |
   Exposé proposé pour l'action _"Les lycéens à la fac"_ du salon des études supérieures du 29 juillet 2022 de l'UNC (13h, Amphi A400).
 
+
+
 # revealjs-url: "/home/romulus/Install/reveal.js"
 progress: true
 slideNumber: true
-width: 960
-height: 700
-margin: 0.02
-minScale: 0.5
-maxScale: 1.0
+width: 1280
+height: 960
+#margin: 0.02
+minScale: 0.33
+maxScale: 1.33
+
+# parallaxBackgroundImage: https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg
+# parallaxBackgroundSize: 960px 700px

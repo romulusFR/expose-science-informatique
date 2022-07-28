@@ -1,6 +1,12 @@
 ## Introduction au séminaire
 
-. . .
+::: notes
+
+- Bref CV à l'oral
+  - ingénieur, docteur, EC
+  - bases de données et sécurité, DS
+
+:::
 
 ### Plan
 
@@ -22,43 +28,13 @@ Objectifs de la conférence :
 
 :::
 
----
-
-<!-- ### Présentation personnelle
-
-#### Formation
-
-- 2004 : Ingénieur Informatique/DEA, INSA de Lyon
-- 2008 : Doctorat Informatique, INSA de Lyon
-
-#### Emplois
-
-- 2008-2010 : postdoc INRIA Grenoble
-- 2010-2022 : maître de conférences en informatique
-  - 2010-2020 : Université Claude Bernard Lyon 1
-  - 2020-2022 : Université de la Nouvelle-Calédonie
-
-#### Thématiques
-
-- bases de données, sécurité, science des données
-
----
-
--->
-
 ### Avant-propos
 
 **Clause de non-responsabilité** : ni philosophe, ni sociologue, ni développeur : _enseignant-chercheur **en informatique**_.
 
-::: notes
-
-- Bref CV à l'oral
-
-:::
-
 ---
 
-### Les informaticiens détestent-ils les imprimantes ?
+### Les informaticiens détestent-ils réparer les imprimantes ?
 
 ![[r/ProgrammerHumor -- I can fix it, but not because I'm a programmer](https://www.reddit.com/r/MemeTemplatesOfficial/comments/sk7nmt/will_smith_shouting_calm_shouting/)](img/printer_programmer.png)
 
@@ -72,32 +48,36 @@ Objectifs de la conférence :
 
 ---
 
-#### Pourquoi les informaticiens détestent-ils ~~les imprimantes~~ ces questions ?
+#### Pourquoi les informaticiens détestent-ils ~~réparer les imprimantes~~ ces questions ?
 
 Réparer l'imprimante, le téléphone ou le wifi n'est **pas le métier** _d'un développeur_ (\*) ni celui _d'un enseignant-chercheur_.
 
 . . .
 
-(\*) ni celui d'un _architecte logiciel_, d'un _intégrateur_, d'un _testeur_, d'un _administrateur réseaux_.
+Quels sont **ces métiers** ? Qu'est ce qui _les différencie_ ?
 
 . . .
 
-Quels sont **ces métiers**, qu'est ce qui _les différencie_, notamment vis-à-vis de _la science informatique_.
+(\*) ni celui d'un _architecte logiciel_, d'un _intégrateur_, d'un _testeur_, d'un _administrateur réseaux_.
 
 ::: notes
+
+réponse à la différece : _la science informatique_ VS la technique
 
 séparer l'utilisateur du concepteur va nous amener, retrospectivement à séparer le du développeur/concepteur du chercheur/scientifique
 :::
 
----
-
 ## L'informatique : science, technique ou même art ?
 
-- _science_ : la connaissance
-- _technique_ : la résolution de problème
-- _art_ : la créativité
+. . .
+
+- _science_ : la connaissance, le vrai
+- _technique_ : la résolution de problème, le faisable
+- _art_ : la créativité, le beau
 
 ---
+
+### L'informatique : science, technique et art
 
 ![[Amazon -- The Art Of Computer Programming](https://images-na.ssl-images-amazon.com/images/I/410vJZbAZGS._SY393_BO1,204,203,200_.jpg)](img/taoc.jpg)
 
@@ -111,8 +91,6 @@ Un parallèle entre _utiliser_, _réaliser_ et _penser_ un couteau en acier et u
 
 #### Utiliser un couteau
 
-<!-- ![[medium.com -- How To Use Kitchen Knives ](https://medium.com/@alyarb03/how-to-use-kitchen-knives-safety-tips-5f073a98a18b)](img/using-knife-safely.jpeg) -->
-
 ![[The Spruce Eats -- How to Use A Chef's Knife](https://www.thespruceeats.com/how-to-use-a-chefs-knife-995812)](img/chef_knife.png)
 
 ---
@@ -125,7 +103,7 @@ Un parallèle entre _utiliser_, _réaliser_ et _penser_ un couteau en acier et u
 
 #### Penser un couteau
 
-![Par Cdang — Travail personnel, CC BY-SA 3.0, <https://commons.wikimedia.org/w/index.php?curid=5827078>](img/Diag_binaire_aciers_et_structure.png)
+![Par Cdang — Travail personnel, CC BY-SA 3.0, [Wikipedia Commons](https://commons.wikimedia.org/w/index.php?curid=5827078)](img/Diag_binaire_aciers_et_structure_white.png)
 
 ::: notes
 
@@ -185,13 +163,17 @@ NDA : _informatics_ synonyme de _computer science_.
 
 :::
 
----
-
 ## L'approche scientifique de l'évaluation des performances
 
 ### Le problème `min-max`
 
-**Problème** trouver _le plus grand_ élément **et** _le plus petit_ élément d'une collection linéaire _non-vide_ d'entiers naturels (par exemple : liste, tableau).
+**Problème** trouver _le plus grand_ élément **et** _le plus petit_ élément d'une _collection linéaire non-vide_ d'entiers naturels (par exemple : liste, tableau).
+
+::: notes
+
+- on dit aussi séquentielle pour linéaire
+
+:::
 
 ---
 
@@ -260,11 +242,15 @@ _C'est une solution correcte aussi, où le développeur connait bien le langage 
 
 ::: notes
 
+pythonista : une notion subjective de beauté, presque d'art
+
 :::
 
 ---
 
 ### Quelle est la meilleure solution ?
+
+. . .
 
 #### Définir **meilleure**
 
@@ -362,7 +348,7 @@ def min_max_etudiant(arr):
     # soit n la longueur de la séquence, n = len(arr)
     the_min = arr[0]
     the_max = arr[0]
-    for v in arr: # on passe (n-1) fois dans cette boucle
+    for v in arr: # on passe (n) fois dans cette boucle
         # une comparaison ici
         if v < the_min:
             the_min = v
@@ -374,28 +360,22 @@ def min_max_etudiant(arr):
 
 . . .
 
-Pour une entrée de longueur $n$, on effectue $2 \times (n-1)$ comparaisons
+Pour une entrée de longueur $n$, on effectue $2 \times n$ comparaisons
 
 . . .
 
-Ce qui compte, c'est **l'ordre de grandeur**, ici, proportionnel à $n$
+Ce qui compte, c'est **l'ordre de grandeur**, ici, proportionnel à $n$, qu'on note $O(n)$, dit _grand $O$ de n_.
 
 ---
 
 ### Comparaison des compléxités
-
-En utilisant la notation de Landau, dite _grand_ $O$ :
-
-Soient $f,g : \mathbb{N} \to \mathbb{R}^+$ deux applications, on dit que _f est dominée par g_ (en $+\infty$) que l'on note $f(n) = O (g(x))$ lorsqu'il existe un rang $N \in \mathbb{N}$ et une constante $C \in \mathbb{R}^+$ tels que $\forall n > N, f(n) \leq C g(x)$.
-
----
 
 | notation      | compléxité    | exemple                         |
 | ------------- | ------------- | ------------------------------- |
 | $O(1)$        | constante     | accès à un élément              |
 | $O(log(n))$   | logarithmique | recherche dichotomique          |
 | $O(n)$        | linéaire      | recherche 👈                    |
-| $O(n.log(n))$ |               | "bon" tri                       |
+| $O(n.\log(n))$ |               | "bon" tri 👈                    |
 | $O(n^2)$      | quadratique   | "mauvais" tri                   |
 | $O(n^c)$      | polynomiale   | produit de matrice naïf ($c=3$) |
 | $O(c^n)$      | exponentielle | voyageur de commerce            |
@@ -407,7 +387,7 @@ Soient $f,g : \mathbb{N} \to \mathbb{R}^+$ deux applications, on dit que _f est 
 - `min_max_etudiant` est en $O(n)$
 - `min_max_pythonista` est en $O(n)$
   - car `min` et `max` le sont
-- `min_max_sorted` est en $O(n.log(n))$
+- `min_max_sorted` est en $O(n.\log(n))$
   - car c'est la compléxité de `sorted`
   - on résoud un problème **trop compliqué** !
 
@@ -422,9 +402,9 @@ Ceci explique/confirme les allures des courbes !
 
 :::
 
----
-
 ## La formation en informatique
+
+. . .
 
 Science **et** technique **et** art
 
@@ -436,13 +416,21 @@ Science **et** technique **et** art
 
 ---
 
+### La science est partout
+
 ![[SourabhSKatoch](https://twitter.com/sourabhskatoch/status/1279426987744849923)](img/ML_IA_VS_MATHS.jpg)
 
 ---
 
-### Programmes
+### L'art est partout
 
-Sciences et techniques (et art) se déclinent :
+![[Cable porn at github](https://www.reddit.com/r/cableporn/comments/9n6ohd/cable_porn_at_github/)](img/cable-porn.png)
+
+---
+
+### Les programmes d'informatique
+
+Sciences et techniques (et art !) se déclinent :
 
 - _langages_
   - paradigmes de programmation, développement, compilation
@@ -451,17 +439,20 @@ Sciences et techniques (et art) se déclinent :
 - _informations_ et _machines_
   - codage/représentation, réseau, système, informatique embarquée
 
----
-
-#### Exemple
-
-<https://unc.nc/formations/licence-informatique/>
-
----
-
 ## Références
 
 - [Notebook Python des exemples `min-max`](code/minmax.ipynb)
 - [Épistémologie de l'informatique, WIKIPEDIA](https://fr.wikipedia.org/wiki/%C3%89pist%C3%A9mologie_de_l%27informatique)
 - [Pourquoi et comment le monde devient numérique, Gérard BERRY, leçon inaugurale au collège de France, 2008](https://www.college-de-france.fr/site/gerard-berry/inaugural-lecture-2008-01-17-18h00.htm)
 - <https://www.reddit.com/r/ProgrammerHumor/>
+- <https://unc.nc/formations/licence-informatique/>
+
+<https://romulusfr.github.io/expose-science-informatique/>
+
+---
+
+### Notation de Landau
+
+Notation de Landau, dite _grand_ $O$ :
+
+Soient $f,g : \mathbb{N} \to \mathbb{R}^+$ deux applications, on dit que _f est dominée par g_ (en $+\infty$) que l'on note $f(n) = O (g(x))$ lorsqu'il existe un rang $N \in \mathbb{N}$ et une constante $C \in \mathbb{R}^+$ tels que $\forall n > N, f(n) \leq C g(x)$.

@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="author" content="romuald.thion@unc.nc">
+  <meta name="author" content="https://romulusfr.github.io/expose-science-informatique/">
   <meta name="keywords" content="informatique, UNC">
   <title>La science informatique</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -82,7 +83,7 @@
     code span.vs { color: #4070a0; } /* VerbatimString */
     code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/solarized.css" id="theme">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/league.css" id="theme">
 </head>
 <body>
   <div class="reveal">
@@ -90,15 +91,27 @@
 
 <section id="title-slide">
   <h1 class="title">La science informatique</h1>
-  <p class="subtitle"><em>ou pourquoi je ne vais ni réparer ton  imprimante ni hacker ton Insta</em></p>
+  <p class="subtitle"><em>“pourquoi je ne vais ni réparer ton  imprimante ni hacker ton Insta”</em></p>
   <p class="author">romuald.thion@unc.nc</p>
-  <p class="date">29 juillet 2022</p>
+  <p class="author"><a href="https://romulusfr.github.io/expose-science-informatique/" class="uri">https://romulusfr.github.io/expose-science-informatique/</a></p>
+  <p class="date">29 juillet 2022, “les lycéens à la fac”, UNC</p>
 </section>
 
-<section id="introduction-au-séminaire" class="slide level2">
+<section>
+<section id="introduction-au-séminaire" class="title-slide slide level2">
 <h2>Introduction au séminaire</h2>
-<div class="fragment">
-<h3 id="plan">Plan</h3>
+<aside class="notes">
+<ul>
+<li>Bref CV à l’oral
+<ul>
+<li>ingénieur, docteur, EC</li>
+<li>bases de données et sécurité, DS</li>
+</ul></li>
+</ul>
+</aside>
+</section>
+<section id="plan" class="slide level3">
+<h3>Plan</h3>
 <ul>
 <li><a href="#/linformatique--science-technique-ou-même-art-">L’informatique : science, technique ou même art ?</a></li>
 <li><a href="#/lapproche-scientifique-de-lévaluation-des-performances">L’approche scientifique de l’évaluation des performances</a></li>
@@ -119,42 +132,13 @@
 </ul></li>
 </ul>
 </aside>
-</div>
 </section>
-<section class="slide level2">
-
-<!-- ### Présentation personnelle
-
-#### Formation
-
-- 2004 : Ingénieur Informatique/DEA, INSA de Lyon
-- 2008 : Doctorat Informatique, INSA de Lyon
-
-#### Emplois
-
-- 2008-2010 : postdoc INRIA Grenoble
-- 2010-2022 : maître de conférences en informatique
-  - 2010-2020 : Université Claude Bernard Lyon 1
-  - 2020-2022 : Université de la Nouvelle-Calédonie
-
-#### Thématiques
-
-- bases de données, sécurité, science des données
-
----
-
--->
-<h3 id="avant-propos">Avant-propos</h3>
+<section id="avant-propos" class="slide level3">
+<h3>Avant-propos</h3>
 <p><strong>Clause de non-responsabilité</strong> : ni philosophe, ni sociologue, ni développeur : <em>enseignant-chercheur <strong>en informatique</strong></em>.</p>
-<aside class="notes">
-<ul>
-<li>Bref CV à l’oral</li>
-</ul>
-</aside>
 </section>
-<section class="slide level2">
-
-<h3 id="les-informaticiens-détestent-ils-les-imprimantes">Les informaticiens détestent-ils les imprimantes ?</h3>
+<section id="les-informaticiens-détestent-ils-réparer-les-imprimantes" class="slide level3">
+<h3>Les informaticiens détestent-ils réparer les imprimantes ?</h3>
 <figure>
 <img data-src="img/printer_programmer.png" alt="r/ProgrammerHumor – I can fix it, but not because I’m a programmer" /><figcaption aria-hidden="true"><a href="https://www.reddit.com/r/MemeTemplatesOfficial/comments/sk7nmt/will_smith_shouting_calm_shouting/">r/ProgrammerHumor – I can fix it, but not because I’m a programmer</a></figcaption>
 </figure>
@@ -166,59 +150,61 @@
 </ul>
 </aside>
 </section>
-<section class="slide level2">
+<section class="slide level3">
 
-<h4 id="pourquoi-les-informaticiens-détestent-ils-les-imprimantes-ces-questions">Pourquoi les informaticiens détestent-ils <del>les imprimantes</del> ces questions ?</h4>
+<h4 id="pourquoi-les-informaticiens-détestent-ils-réparer-les-imprimantes-ces-questions">Pourquoi les informaticiens détestent-ils <del>réparer les imprimantes</del> ces questions ?</h4>
 <p>Réparer l’imprimante, le téléphone ou le wifi n’est <strong>pas le métier</strong> <em>d’un développeur</em> (*) ni celui <em>d’un enseignant-chercheur</em>.</p>
 <div class="fragment">
-<p>(*) ni celui d’un <em>architecte logiciel</em>, d’un <em>intégrateur</em>, d’un <em>testeur</em>, d’un <em>administrateur réseaux</em>.</p>
+<p>Quels sont <strong>ces métiers</strong> ? Qu’est ce qui <em>les différencie</em> ?</p>
 </div>
 <div class="fragment">
-<p>Quels sont <strong>ces métiers</strong>, qu’est ce qui <em>les différencie</em>, notamment vis-à-vis de <em>la science informatique</em>.</p>
+<p>(*) ni celui d’un <em>architecte logiciel</em>, d’un <em>intégrateur</em>, d’un <em>testeur</em>, d’un <em>administrateur réseaux</em>.</p>
 <aside class="notes">
+<p>réponse à la différece : <em>la science informatique</em> VS la technique</p>
 <p>séparer l’utilisateur du concepteur va nous amener, retrospectivement à séparer le du développeur/concepteur du chercheur/scientifique</p>
 </aside>
 </div>
-</section>
-<section id="linformatique-science-technique-ou-même-art" class="slide level2">
+</section></section>
+<section>
+<section id="linformatique-science-technique-ou-même-art" class="title-slide slide level2">
 <h2>L’informatique : science, technique ou même art ?</h2>
+<div class="fragment">
 <ul>
-<li><em>science</em> : la connaissance</li>
-<li><em>technique</em> : la résolution de problème</li>
-<li><em>art</em> : la créativité</li>
+<li><em>science</em> : la connaissance, le vrai</li>
+<li><em>technique</em> : la résolution de problème, le faisable</li>
+<li><em>art</em> : la créativité, le beau</li>
 </ul>
+</div>
 </section>
-<section class="slide level2">
-
+<section id="linformatique-science-technique-et-art" class="slide level3">
+<h3>L’informatique : science, technique et art</h3>
 <figure>
 <img data-src="img/taoc.jpg" alt="Amazon – The Art Of Computer Programming" /><figcaption aria-hidden="true"><a href="https://images-na.ssl-images-amazon.com/images/I/410vJZbAZGS._SY393_BO1,204,203,200_.jpg">Amazon – The Art Of Computer Programming</a></figcaption>
 </figure>
 </section>
-<section class="slide level2">
-
-<h3 id="métaphore-du-couteau">Métaphore du couteau</h3>
+<section id="métaphore-du-couteau" class="slide level3">
+<h3>Métaphore du couteau</h3>
 <p>Un parallèle entre <em>utiliser</em>, <em>réaliser</em> et <em>penser</em> un couteau en acier et un programme informatique.</p>
 </section>
-<section class="slide level2">
+<section class="slide level3">
 
 <h4 id="utiliser-un-couteau">Utiliser un couteau</h4>
-<!-- ![[medium.com -- How To Use Kitchen Knives ](https://medium.com/@alyarb03/how-to-use-kitchen-knives-safety-tips-5f073a98a18b)](img/using-knife-safely.jpeg) -->
 <figure>
 <img data-src="img/chef_knife.png" alt="The Spruce Eats – How to Use A Chef’s Knife" /><figcaption aria-hidden="true"><a href="https://www.thespruceeats.com/how-to-use-a-chefs-knife-995812">The Spruce Eats – How to Use A Chef’s Knife</a></figcaption>
 </figure>
 </section>
-<section class="slide level2">
+<section class="slide level3">
 
 <h4 id="réaliser-un-couteau">Réaliser un couteau</h4>
 <figure>
 <img data-src="img/forging-blade.jpg" alt="Industrial Heating – Forging Knives in College" /><figcaption aria-hidden="true"><a href="https://www.industrialheating.com/articles/95969-forging-knives-in-college">Industrial Heating – Forging Knives in College</a></figcaption>
 </figure>
 </section>
-<section class="slide level2">
+<section class="slide level3">
 
 <h4 id="penser-un-couteau">Penser un couteau</h4>
 <figure>
-<img data-src="img/Diag_binaire_aciers_et_structure.png" alt="Par Cdang — Travail personnel, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=5827078" /><figcaption aria-hidden="true">Par Cdang — Travail personnel, CC BY-SA 3.0, <a href="https://commons.wikimedia.org/w/index.php?curid=5827078" class="uri">https://commons.wikimedia.org/w/index.php?curid=5827078</a></figcaption>
+<img data-src="img/Diag_binaire_aciers_et_structure_white.png" alt="Par Cdang — Travail personnel, CC BY-SA 3.0, Wikipedia Commons" /><figcaption aria-hidden="true">Par Cdang — Travail personnel, CC BY-SA 3.0, <a href="https://commons.wikimedia.org/w/index.php?curid=5827078">Wikipedia Commons</a></figcaption>
 </figure>
 <aside class="notes">
 <p>L’acier a été découvert très tôt dans l’histoire car sa matière première est abondante (minerai), et qu’il est facile à travailler. L’acier « de base » est de fait peu onéreux.</p>
@@ -228,7 +214,7 @@ fonte : teneur supérieure à 2,11 %.</code></pre>
 <p>Diagramme binaire fer-carbone et structure cristalline des aciers à l’état recuit</p>
 </aside>
 </section>
-<section class="slide level2">
+<section class="slide level3">
 
 <h4 id="parallèle">Parallèle</h4>
 <table>
@@ -274,9 +260,8 @@ fonte : teneur supérieure à 2,11 %.</code></pre>
 </ul>
 </aside>
 </section>
-<section class="slide level2">
-
-<h3 id="une-définition-de-la-science-informatique-12">Une définition de la science informatique (1/2)</h3>
+<section id="une-définition-de-la-science-informatique-12" class="slide level3">
+<h3>Une définition de la science informatique (1/2)</h3>
 <!-- #### Informatics -->
 <blockquote>
 <p><strong>Informatics</strong> is the scientific discipline that underpins the digital world.</p>
@@ -284,9 +269,8 @@ fonte : teneur supérieure à 2,11 %.</code></pre>
 <p><a href="https://www.informaticsforall.org/the-informatics-reference-framework-for-school-release-february-2022/">Informatics Reference Framework for School</a>.</p>
 <p>NDA : <em>informatics</em> synonyme de <em>computer science</em>.</p>
 </section>
-<section class="slide level2">
-
-<h3 id="une-définition-de-la-science-informatique-22">Une définition de la science informatique (2/2)</h3>
+<section id="une-définition-de-la-science-informatique-22" class="slide level3">
+<h3>Une définition de la science informatique (2/2)</h3>
 <blockquote>
 <p>L’informatique parle d’objets de différente nature : <strong>informations</strong>, <strong>langages</strong>, <strong>machines</strong> et <strong>algorithmes</strong>.</p>
 <p>Chacun de ces quatre concepts est <em>antérieur à l’informatique</em>, mais ce qui ce que l’informatique apporte sans doute de nouveaux est <strong>leur organisation en une science cohérente</strong>.</p>
@@ -295,15 +279,23 @@ fonte : teneur supérieure à 2,11 %.</code></pre>
 <aside class="notes">
 
 </aside>
-</section>
-<section id="lapproche-scientifique-de-lévaluation-des-performances" class="slide level2">
+</section></section>
+<section>
+<section id="lapproche-scientifique-de-lévaluation-des-performances" class="title-slide slide level2">
 <h2>L’approche scientifique de l’évaluation des performances</h2>
-<h3 id="le-problème-min-max">Le problème <code>min-max</code></h3>
-<p><strong>Problème</strong> trouver <em>le plus grand</em> élément <strong>et</strong> <em>le plus petit</em> élément d’une collection linéaire <em>non-vide</em> d’entiers naturels (par exemple : liste, tableau).</p>
-</section>
-<section class="slide level2">
 
-<h3 id="différentes-solutions-python">Différentes solutions Python</h3>
+</section>
+<section id="le-problème-min-max" class="slide level3">
+<h3>Le problème <code>min-max</code></h3>
+<p><strong>Problème</strong> trouver <em>le plus grand</em> élément <strong>et</strong> <em>le plus petit</em> élément d’une <em>collection linéaire non-vide</em> d’entiers naturels (par exemple : liste, tableau).</p>
+<aside class="notes">
+<ul>
+<li>on dit aussi séquentielle pour linéaire</li>
+</ul>
+</aside>
+</section>
+<section id="différentes-solutions-python" class="slide level3">
+<h3>Différentes solutions Python</h3>
 <h4 id="solution-étudiant">Solution <em>étudiant</em></h4>
 <div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> min_max_etudiant(arr):</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    min_courant <span class="op">=</span> arr[<span class="dv">0</span>]</span>
@@ -327,7 +319,7 @@ fonte : teneur supérieure à 2,11 %.</code></pre>
 </aside>
 </div>
 </section>
-<section class="slide level2">
+<section class="slide level3">
 
 <h4 id="solution-développeur">Solution <em>développeur</em></h4>
 <div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> min_max_sorter(arr):</span>
@@ -342,7 +334,7 @@ fonte : teneur supérieure à 2,11 %.</code></pre>
 </aside>
 </div>
 </section>
-<section class="slide level2">
+<section class="slide level3">
 
 <h4 id="solution-pythonista">Solution <em>Pythonista</em></h4>
 <div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> min_max_pythonista(arr):</span>
@@ -350,13 +342,13 @@ fonte : teneur supérieure à 2,11 %.</code></pre>
 <div class="fragment">
 <p><em>C’est une solution correcte aussi, où le développeur connait bien le langage Python et propose une solution “Pythonique”</em>.</p>
 <aside class="notes">
-
+<p>pythonista : une notion subjective de beauté, presque d’art</p>
 </aside>
 </div>
 </section>
-<section class="slide level2">
-
-<h3 id="quelle-est-la-meilleure-solution">Quelle est la meilleure solution ?</h3>
+<section id="quelle-est-la-meilleure-solution" class="slide level3">
+<h3>Quelle est la meilleure solution ?</h3>
+<div class="fragment">
 <h4 id="définir-meilleure">Définir <strong>meilleure</strong></h4>
 <div class="fragment">
 <ul>
@@ -369,8 +361,9 @@ fonte : teneur supérieure à 2,11 %.</code></pre>
 <div class="fragment">
 <p>On va ici évaluer <em>l’efficacité <strong>en temps</strong></em></p>
 </div>
+</div>
 </section>
-<section class="slide level2">
+<section class="slide level3">
 
 <h4 id="critères-defficacité-en-temps">Critères d’efficacité en temps</h4>
 <div class="fragment">
@@ -386,7 +379,7 @@ fonte : teneur supérieure à 2,11 %.</code></pre>
 </aside>
 </div>
 </section>
-<section class="slide level2">
+<section class="slide level3">
 
 <h4 id="évaluation-empirique-12">Évaluation empirique (1/2)</h4>
 <p><img data-src="code/min_max_small.png" /></p>
@@ -397,15 +390,14 @@ fonte : teneur supérieure à 2,11 %.</code></pre>
 <p>Une autre exec ne donnera pas le même résultat</p>
 </aside>
 </section>
-<section class="slide level2">
+<section class="slide level3">
 
 <h4 id="évaluation-empirique-22">Évaluation empirique (2/2)</h4>
 <p><img data-src="code/min_max_large.png" /></p>
 <p><strong>Peut-on déterminer quelle est la meilleure solution ?</strong></p>
 </section>
-<section class="slide level2">
-
-<h3 id="la-compléxité-algorithmique">La compléxité algorithmique</h3>
+<section id="la-compléxité-algorithmique" class="slide level3">
+<h3>La compléxité algorithmique</h3>
 <ul>
 <li>Peut-on <strong>modéliser</strong> les comportements de ces algorithmes ?
 <ul>
@@ -430,14 +422,13 @@ fonte : teneur supérieure à 2,11 %.</code></pre>
 </ul>
 </aside>
 </section>
-<section class="slide level2">
-
-<h3 id="déterminer-le-nombre-de-comparaisons">Déterminer le nombre de comparaisons</h3>
+<section id="déterminer-le-nombre-de-comparaisons" class="slide level3">
+<h3>Déterminer le nombre de comparaisons</h3>
 <div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> min_max_etudiant(arr):</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># soit n la longueur de la séquence, n = len(arr)</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    the_min <span class="op">=</span> arr[<span class="dv">0</span>]</span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    the_max <span class="op">=</span> arr[<span class="dv">0</span>]</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> v <span class="kw">in</span> arr: <span class="co"># on passe (n-1) fois dans cette boucle</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> v <span class="kw">in</span> arr: <span class="co"># on passe (n) fois dans cette boucle</span></span>
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>        <span class="co"># une comparaison ici</span></span>
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> v <span class="op">&lt;</span> the_min:</span>
 <span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>            the_min <span class="op">=</span> v</span>
@@ -446,20 +437,14 @@ fonte : teneur supérieure à 2,11 %.</code></pre>
 <span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>            the_max <span class="op">=</span> v</span>
 <span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> the_min, the_max</span></code></pre></div>
 <div class="fragment">
-<p>Pour une entrée de longueur <span class="math inline">\(n\)</span>, on effectue <span class="math inline">\(2 \times (n-1)\)</span> comparaisons</p>
+<p>Pour une entrée de longueur <span class="math inline">\(n\)</span>, on effectue <span class="math inline">\(2 \times n\)</span> comparaisons</p>
 </div>
 <div class="fragment">
-<p>Ce qui compte, c’est <strong>l’ordre de grandeur</strong>, ici, proportionnel à <span class="math inline">\(n\)</span></p>
+<p>Ce qui compte, c’est <strong>l’ordre de grandeur</strong>, ici, proportionnel à <span class="math inline">\(n\)</span>, qu’on note <span class="math inline">\(O(n)\)</span>, dit <em>grand <span class="math inline">\(O\)</span> de n</em>.</p>
 </div>
 </section>
-<section class="slide level2">
-
-<h3 id="comparaison-des-compléxités">Comparaison des compléxités</h3>
-<p>En utilisant la notation de Landau, dite <em>grand</em> <span class="math inline">\(O\)</span> :</p>
-<p>Soient <span class="math inline">\(f,g : \mathbb{N} \to \mathbb{R}^+\)</span> deux applications, on dit que <em>f est dominée par g</em> (en <span class="math inline">\(+\infty\)</span>) que l’on note <span class="math inline">\(f(n) = O (g(x))\)</span> lorsqu’il existe un rang <span class="math inline">\(N \in \mathbb{N}\)</span> et une constante <span class="math inline">\(C \in \mathbb{R}^+\)</span> tels que <span class="math inline">\(\forall n &gt; N, f(n) \leq C g(x)\)</span>.</p>
-</section>
-<section class="slide level2">
-
+<section id="comparaison-des-compléxités" class="slide level3">
+<h3>Comparaison des compléxités</h3>
 <table>
 <thead>
 <tr class="header">
@@ -485,9 +470,9 @@ fonte : teneur supérieure à 2,11 %.</code></pre>
 <td>recherche 👈</td>
 </tr>
 <tr class="even">
-<td><span class="math inline">\(O(n.log(n))\)</span></td>
+<td><span class="math inline">\(O(n.\log(n))\)</span></td>
 <td></td>
-<td>“bon” tri</td>
+<td>“bon” tri 👈</td>
 </tr>
 <tr class="odd">
 <td><span class="math inline">\(O(n^2)\)</span></td>
@@ -507,16 +492,15 @@ fonte : teneur supérieure à 2,11 %.</code></pre>
 </tbody>
 </table>
 </section>
-<section class="slide level2">
-
-<h3 id="comparaison-des-compléxités-des-solutions-min-max">Comparaison des compléxités des solutions <code>min-max</code></h3>
+<section id="comparaison-des-compléxités-des-solutions-min-max" class="slide level3">
+<h3>Comparaison des compléxités des solutions <code>min-max</code></h3>
 <ul>
 <li><code>min_max_etudiant</code> est en <span class="math inline">\(O(n)\)</span></li>
 <li><code>min_max_pythonista</code> est en <span class="math inline">\(O(n)\)</span>
 <ul>
 <li>car <code>min</code> et <code>max</code> le sont</li>
 </ul></li>
-<li><code>min_max_sorted</code> est en <span class="math inline">\(O(n.log(n))\)</span>
+<li><code>min_max_sorted</code> est en <span class="math inline">\(O(n.\log(n))\)</span>
 <ul>
 <li>car c’est la compléxité de <code>sorted</code></li>
 <li>on résoud un problème <strong>trop compliqué</strong> !</li>
@@ -531,26 +515,34 @@ fonte : teneur supérieure à 2,11 %.</code></pre>
 </ul>
 <p>Ceci explique/confirme les allures des courbes !</p>
 </aside>
-</section>
-<section id="la-formation-en-informatique" class="slide level2">
+</section></section>
+<section>
+<section id="la-formation-en-informatique" class="title-slide slide level2">
 <h2>La formation en informatique</h2>
+<div class="fragment">
 <p>Science <strong>et</strong> technique <strong>et</strong> art</p>
 <!-- . . .
 
 - _science_ : ce qui est **vrai**
 - _technique_ : ce qui est **faisable**
 - _art_ : ce qui est **beau** -->
+</div>
 </section>
-<section class="slide level2">
-
+<section id="la-science-est-partout" class="slide level3">
+<h3>La science est partout</h3>
 <figure>
 <img data-src="img/ML_IA_VS_MATHS.jpg" alt="SourabhSKatoch" /><figcaption aria-hidden="true"><a href="https://twitter.com/sourabhskatoch/status/1279426987744849923">SourabhSKatoch</a></figcaption>
 </figure>
 </section>
-<section class="slide level2">
-
-<h3 id="programmes">Programmes</h3>
-<p>Sciences et techniques (et art) se déclinent :</p>
+<section id="lart-est-partout" class="slide level3">
+<h3>L’art est partout</h3>
+<figure>
+<img data-src="img/cable-porn.png" alt="Cable porn at github" /><figcaption aria-hidden="true"><a href="https://www.reddit.com/r/cableporn/comments/9n6ohd/cable_porn_at_github/">Cable porn at github</a></figcaption>
+</figure>
+</section>
+<section id="les-programmes-dinformatique" class="slide level3">
+<h3>Les programmes d’informatique</h3>
+<p>Sciences et techniques (et art !) se déclinent :</p>
 <ul>
 <li><em>langages</em>
 <ul>
@@ -565,21 +557,24 @@ fonte : teneur supérieure à 2,11 %.</code></pre>
 <li>codage/représentation, réseau, système, informatique embarquée</li>
 </ul></li>
 </ul>
-</section>
-<section class="slide level2">
-
-<h4 id="exemple">Exemple</h4>
-<p><a href="https://unc.nc/formations/licence-informatique/" class="uri">https://unc.nc/formations/licence-informatique/</a></p>
-</section>
-<section id="références" class="slide level2">
+</section></section>
+<section>
+<section id="références" class="title-slide slide level2">
 <h2>Références</h2>
 <ul>
 <li><a href="code/minmax.ipynb">Notebook Python des exemples <code>min-max</code></a></li>
 <li><a href="https://fr.wikipedia.org/wiki/%C3%89pist%C3%A9mologie_de_l%27informatique">Épistémologie de l’informatique, WIKIPEDIA</a></li>
 <li><a href="https://www.college-de-france.fr/site/gerard-berry/inaugural-lecture-2008-01-17-18h00.htm">Pourquoi et comment le monde devient numérique, Gérard BERRY, leçon inaugurale au collège de France, 2008</a></li>
 <li><a href="https://www.reddit.com/r/ProgrammerHumor/" class="uri">https://www.reddit.com/r/ProgrammerHumor/</a></li>
+<li><a href="https://unc.nc/formations/licence-informatique/" class="uri">https://unc.nc/formations/licence-informatique/</a></li>
 </ul>
+<p><a href="https://romulusfr.github.io/expose-science-informatique/" class="uri">https://romulusfr.github.io/expose-science-informatique/</a></p>
 </section>
+<section id="notation-de-landau" class="slide level3">
+<h3>Notation de Landau</h3>
+<p>Notation de Landau, dite <em>grand</em> <span class="math inline">\(O\)</span> :</p>
+<p>Soient <span class="math inline">\(f,g : \mathbb{N} \to \mathbb{R}^+\)</span> deux applications, on dit que <em>f est dominée par g</em> (en <span class="math inline">\(+\infty\)</span>) que l’on note <span class="math inline">\(f(n) = O (g(x))\)</span> lorsqu’il existe un rang <span class="math inline">\(N \in \mathbb{N}\)</span> et une constante <span class="math inline">\(C \in \mathbb{R}^+\)</span> tels que <span class="math inline">\(\forall n &gt; N, f(n) \leq C g(x)\)</span>.</p>
+</section></section>
     </div>
   </div>
 
@@ -607,13 +602,11 @@ fonte : teneur supérieure à 2,11 %.</code></pre>
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-        width: 960,
-        height: 700,
-        // Factor of the display size that should remain empty around the content
-        margin: 0.02,
+        width: 1280,
+        height: 960,
         // Bounds for smallest/largest possible scale to apply to content
-        minScale: 0.5,
-        maxScale: 1.0,
+        minScale: 0.33,
+        maxScale: 1.33,
         math: {
           mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
           config: 'TeX-AMS_HTML-full',
